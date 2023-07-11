@@ -1,0 +1,48 @@
+2023-07-10 17:57:50.671 DEBUG 300 --- [XNIO-1 task-27] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-07-10 17:57:50.699 DEBUG 300 --- [XNIO-1 task-27] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-07-10 17:57:50.710 DEBUG 300 --- [XNIO-1 task-27] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-07-10 17:57:50.714 DEBUG 300 --- [XNIO-1 task-27] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-07-10 17:57:50.714 DEBUG 300 --- [XNIO-1 task-27] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-07-10 17:57:50.716 DEBUG 300 --- [XNIO-1 task-27] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-07-10 17:58:26.155 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2023-07-10 17:58:26.156 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2023-07-10 17:58:26.159 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2023-07-10 17:58:26.161 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2023-07-10 17:58:26.161 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2023-07-10 17:58:26.172 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2023-07-10 17:58:26.174 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2023-07-10 17:58:26.174 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2023-07-10 17:58:26.182 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2023-07-10 17:58:26.183 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2023-07-10 17:58:26.183 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2023-07-10 17:58:26.189 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2023-07-10 17:58:26.201 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2023-07-10 17:58:26.202 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.U.selectCountByDate            : ==> Parameters: 2023-07-01 00:00:00.0(Timestamp), 2023-07-31 23:59:59.0(Timestamp)
+2023-07-10 17:58:26.212 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.U.selectCountByDate            : <==      Total: 3
+2023-07-10 17:58:26.218 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2023-07-10 17:58:26.219 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.E.selectCountByDate            : ==> Parameters: 2023-07-01 00:00:00.0(Timestamp), 2023-07-31 23:59:59.0(Timestamp)
+2023-07-10 17:58:26.221 DEBUG 300 --- [XNIO-1 task-31] r.c.m.x.r.E.selectCountByDate            : <==      Total: 1
+2023-07-10 19:55:45.316 DEBUG 300 --- [XNIO-1 task-34] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-07-10 19:55:45.322 DEBUG 300 --- [XNIO-1 task-34] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-07-10 19:55:45.331 DEBUG 300 --- [XNIO-1 task-34] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-07-10 19:55:45.334 DEBUG 300 --- [XNIO-1 task-34] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-07-10 19:55:45.334 DEBUG 300 --- [XNIO-1 task-34] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-07-10 19:55:45.335 DEBUG 300 --- [XNIO-1 task-34] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-07-10 19:55:45.435 DEBUG 300 --- [XNIO-1 task-34] r.c.m.x.r.UserEventLogMapper.page_COUNT  : ==>  Preparing: SELECT count(0) FROM t_user_event_log 
+2023-07-10 19:55:45.435 DEBUG 300 --- [XNIO-1 task-34] r.c.m.x.r.UserEventLogMapper.page_COUNT  : ==> Parameters: 
+2023-07-10 19:55:45.439 DEBUG 300 --- [XNIO-1 task-34] r.c.m.x.r.UserEventLogMapper.page_COUNT  : <==      Total: 1
+2023-07-10 19:55:45.444 DEBUG 300 --- [XNIO-1 task-34] r.c.m.x.r.UserEventLogMapper.page        : ==>  Preparing: SELECT id, user_id, user_name, real_name, content, create_time FROM t_user_event_log order by id desc LIMIT ? 
+2023-07-10 19:55:45.445 DEBUG 300 --- [XNIO-1 task-34] r.c.m.x.r.UserEventLogMapper.page        : ==> Parameters: 10(Integer)
+2023-07-10 19:55:45.451 DEBUG 300 --- [XNIO-1 task-34] r.c.m.x.r.UserEventLogMapper.page        : <==      Total: 10
+2023-07-10 19:55:51.792 DEBUG 300 --- [XNIO-1 task-35] r.c.m.x.r.UserEventLogMapper.page_COUNT  : ==>  Preparing: SELECT count(0) FROM t_user_event_log 
+2023-07-10 19:55:51.793 DEBUG 300 --- [XNIO-1 task-35] r.c.m.x.r.UserEventLogMapper.page_COUNT  : ==> Parameters: 
+2023-07-10 19:55:51.794 DEBUG 300 --- [XNIO-1 task-35] r.c.m.x.r.UserEventLogMapper.page_COUNT  : <==      Total: 1
+2023-07-10 19:55:51.795 DEBUG 300 --- [XNIO-1 task-35] r.c.m.x.r.UserEventLogMapper.page        : ==>  Preparing: SELECT id, user_id, user_name, real_name, content, create_time FROM t_user_event_log order by id desc LIMIT ?, ? 
+2023-07-10 19:55:51.796 DEBUG 300 --- [XNIO-1 task-35] r.c.m.x.r.UserEventLogMapper.page        : ==> Parameters: 20(Integer), 10(Integer)
+2023-07-10 19:55:51.798 DEBUG 300 --- [XNIO-1 task-35] r.c.m.x.r.UserEventLogMapper.page        : <==      Total: 8
+2023-07-10 19:55:55.518 DEBUG 300 --- [XNIO-1 task-36] r.c.m.x.r.UserEventLogMapper.page_COUNT  : ==>  Preparing: SELECT count(0) FROM t_user_event_log 
+2023-07-10 19:55:55.518 DEBUG 300 --- [XNIO-1 task-36] r.c.m.x.r.UserEventLogMapper.page_COUNT  : ==> Parameters: 
+2023-07-10 19:55:55.519 DEBUG 300 --- [XNIO-1 task-36] r.c.m.x.r.UserEventLogMapper.page_COUNT  : <==      Total: 1
+2023-07-10 19:55:55.519 DEBUG 300 --- [XNIO-1 task-36] r.c.m.x.r.UserEventLogMapper.page        : ==>  Preparing: SELECT id, user_id, user_name, real_name, content, create_time FROM t_user_event_log order by id desc LIMIT ?, ? 
+2023-07-10 19:55:55.520 DEBUG 300 --- [XNIO-1 task-36] r.c.m.x.r.UserEventLogMapper.page        : ==> Parameters: 10(Integer), 10(Integer)
+2023-07-10 19:55:55.521 DEBUG 300 --- [XNIO-1 task-36] r.c.m.x.r.UserEventLogMapper.page        : <==      Total: 10
