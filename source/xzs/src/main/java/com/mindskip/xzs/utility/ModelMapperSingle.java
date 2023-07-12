@@ -17,7 +17,9 @@ public class ModelMapperSingle {
     private final static ModelMapperSingle modelMapperSingle = new ModelMapperSingle();
 
     static {
+        //要求全完全类型匹配
         modelMapper.getConfiguration().setFullTypeMatchingRequired(true);
+        //属性类型和名称完全匹配才进行复制
         modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
     }
 

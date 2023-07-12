@@ -27,18 +27,20 @@ public class EducationController extends BaseApiController {
     private final SubjectService subjectService;
 
 
-    //
+    //对象控制器
     @Autowired
     public EducationController(SubjectService subjectService) {
         this.subjectService = subjectService;
     }
 
+    //处理学科数据列表的post请求
     @RequestMapping(value = "/subject/list", method = RequestMethod.POST)
     public RestResponse<List<Subject>> list() {
         List<Subject> subjects = subjectService.allSubject();
         return RestResponse.ok(subjects);
     }
 
+    //处理页面数据的post请求。并发送响应状态码。
     @RequestMapping(value = "/subject/page", method = RequestMethod.POST)
     public RestResponse<PageInfo<SubjectResponseVM>> pageList(@RequestBody SubjectPageRequestVM model) {
         PageInfo<Subject> pageInfo = subjectService.page(model);
@@ -46,8 +48,13 @@ public class EducationController extends BaseApiController {
         return RestResponse.ok(page);
     }
 
+
+    //编辑界面
+
     @RequestMapping(value = "/subject/edit", method = RequestMethod.POST)
+    //对象数据校验
     public RestResponse edit(@RequestBody @Valid SubjectEditRequestVM model) {
+
         Subject subject = modelMapper.map(model, Subject.class);
         if (model.getId() == null) {
             subject.setDeleted(false);
