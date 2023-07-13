@@ -17,6 +17,7 @@ import javax.validation.Valid;
 
 @RestController("AdminExamPaperController")
 @RequestMapping(value = "/api/admin/exam/paper")
+//试卷控制器
 public class ExamPaperController extends BaseApiController {
 
     private final ExamPaperService examPaperService;
@@ -26,6 +27,7 @@ public class ExamPaperController extends BaseApiController {
         this.examPaperService = examPaperService;
     }
 
+    //页面列表
     @RequestMapping(value = "/page", method = RequestMethod.POST)
     public RestResponse<PageInfo<ExamResponseVM>> pageList(@RequestBody ExamPaperPageRequestVM model) {
         PageInfo<ExamPaper> pageInfo = examPaperService.page(model);
@@ -39,6 +41,7 @@ public class ExamPaperController extends BaseApiController {
 
 
 
+    //任务列表
     @RequestMapping(value = "/taskExamPage", method = RequestMethod.POST)
     public RestResponse<PageInfo<ExamResponseVM>> taskExamPageList(@RequestBody ExamPaperPageRequestVM model) {
         PageInfo<ExamPaper> pageInfo = examPaperService.taskExamPage(model);
@@ -52,19 +55,23 @@ public class ExamPaperController extends BaseApiController {
 
 
 
+    //编辑
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
     public RestResponse<ExamPaperEditRequestVM> edit(@RequestBody @Valid ExamPaperEditRequestVM model) {
         ExamPaper examPaper = examPaperService.savePaperFromVM(model, getCurrentUser());
+        //将更改后的数据更新到vm中。便于复制
         ExamPaperEditRequestVM newVM = examPaperService.examPaperToVM(examPaper.getId());
         return RestResponse.ok(newVM);
     }
 
+    //根据id查询
     @RequestMapping(value = "/select/{id}", method = RequestMethod.POST)
     public RestResponse<ExamPaperEditRequestVM> select(@PathVariable Integer id) {
         ExamPaperEditRequestVM vm = examPaperService.examPaperToVM(id);
         return RestResponse.ok(vm);
     }
 
+    //删除
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
     public RestResponse delete(@PathVariable Integer id) {
         ExamPaper examPaper = examPaperService.selectById(id);

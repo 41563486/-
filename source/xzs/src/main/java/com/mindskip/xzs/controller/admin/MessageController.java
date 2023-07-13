@@ -27,6 +27,7 @@ import java.util.stream.Collectors;
 
 @RestController("AdminMessageController")
 @RequestMapping(value = "/api/admin/message")
+//信息页面控制器
 public class MessageController extends BaseApiController {
 
     private final MessageService messageService;
@@ -38,11 +39,14 @@ public class MessageController extends BaseApiController {
         this.userService = userService;
     }
 
+    //消息列表
     @RequestMapping(value = "/page", method = RequestMethod.POST)
     public RestResponse<PageInfo<MessageResponseVM>> pageList(@RequestBody MessagePageRequestVM model) {
         PageInfo<Message> pageInfo = messageService.page(model);
+        //获取id集合
         List<Integer> ids = pageInfo.getList().stream().map(d -> d.getId()).collect(Collectors.toList());
         List<MessageUser> messageUsers = ids.size() == 0 ? null : messageService.selectByMessageIds(ids);
+        //封装数据
         PageInfo<MessageResponseVM> page = PageInfoHelper.copyMap(pageInfo, m -> {
             MessageResponseVM vm = modelMapper.map(m, MessageResponseVM.class);
             String receives = messageUsers.stream().filter(d -> d.getMessageId().equals(m.getId())).map(d -> d.getReceiveUserName())
@@ -55,6 +59,7 @@ public class MessageController extends BaseApiController {
     }
 
 
+    //发送信息
     @RequestMapping(value = "/send", method = RequestMethod.POST)
     public RestResponse send(@RequestBody @Valid MessageSendVM model) {
         User user = getCurrentUser();

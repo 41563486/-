@@ -24,6 +24,7 @@ import java.util.Arrays;
 
 @RequestMapping("/api/admin/upload")
 @RestController("AdminUploadController")
+//上传控制器
 public class UploadController extends BaseApiController {
 
     private final FileUpload fileUpload;
@@ -42,20 +43,25 @@ public class UploadController extends BaseApiController {
 
     @ResponseBody
     @RequestMapping("/configAndUpload")
+    //实现多图片上传
     public Object upload(HttpServletRequest request, HttpServletResponse response) {
+        //获取请求参数，判断目前的状态
         String action = request.getParameter("action");
         if (action.equals(IMAGE_UPLOAD)) {
             try {
                 MultipartHttpServletRequest multipartHttpServletRequest = (MultipartHttpServletRequest) request;
                 MultipartFile multipartFile = multipartHttpServletRequest.getFile(IMAGE_UPLOAD_FILE);
                 long attachSize = multipartFile.getSize();
+                //获取上传图片的原始文件名
                 String imgName = multipartFile.getOriginalFilename();
                 String filePath;
                 try (InputStream inputStream = multipartFile.getInputStream()) {
                     filePath = fileUpload.uploadFile(inputStream, attachSize, imgName);
                 }
+                //通过截断.的后面获取文件类型
                 String imageType = imgName.substring(imgName.lastIndexOf("."));
                 UploadResultVM uploadResultVM = new UploadResultVM();
+                //封装上传图片的数据参数
                 uploadResultVM.setOriginal(imgName);
                 uploadResultVM.setName(imgName);
                 uploadResultVM.setUrl(filePath);
@@ -67,10 +73,14 @@ public class UploadController extends BaseApiController {
                 logger.error(e.getMessage(), e);
             }
         } else {
+
+            //封装数据
             UeditorConfigVM ueditorConfigVM = new UeditorConfigVM();
             ueditorConfigVM.setImageActionName(IMAGE_UPLOAD);
             ueditorConfigVM.setImageFieldName(IMAGE_UPLOAD_FILE);
+            //大小设定为2g
             ueditorConfigVM.setImageMaxSize(2048000L);
+            //上传类型的规则
             ueditorConfigVM.setImageAllowFiles(Arrays.asList(".png", ".jpg", ".jpeg", ".gif", ".bmp"));
             ueditorConfigVM.setImageCompressEnable(true);
             ueditorConfigVM.setImageCompressBorder(1600);
@@ -86,6 +96,7 @@ public class UploadController extends BaseApiController {
     @RequestMapping("/image")
     @ResponseBody
     public RestResponse questionUploadAndReadExcel(HttpServletRequest request) {
+
         MultipartHttpServletRequest multipartHttpServletRequest = (MultipartHttpServletRequest) request;
         MultipartFile multipartFile = multipartHttpServletRequest.getFile("file");
         long attachSize = multipartFile.getSize();

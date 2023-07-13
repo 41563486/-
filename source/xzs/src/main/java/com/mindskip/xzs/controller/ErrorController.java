@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
+//错误页面控制器
 @RestController
 public class ErrorController extends BasicErrorController {
 
@@ -24,7 +25,10 @@ public class ErrorController extends BasicErrorController {
         super(new DefaultErrorAttributes(), new ErrorProperties());
     }
 
+    //指定返回json格式的请求
     @RequestMapping(produces = {MediaType.APPLICATION_JSON_VALUE})
+
+    //返回错误信息和状态码
     @ResponseBody
     public ResponseEntity<Map<String, Object>> error(HttpServletRequest request) {
         Map<String, Object> error = new HashMap<>(2);

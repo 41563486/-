@@ -3,6 +3,9 @@ package com.mindskip.xzs.domain.enums;
 import java.util.HashMap;
 import java.util.Map;
 
+
+
+//题目类型枚举
 public enum QuestionTypeEnum {
 
     SingleChoice(1, "单选题"),
@@ -32,6 +35,7 @@ public enum QuestionTypeEnum {
         return keyMap.get(code);
     }
 
+    //判断需要保存文本内容
     public static boolean needSaveTextContent(Integer code) {
         QuestionTypeEnum questionTypeEnum = QuestionTypeEnum.fromCode(code);
         switch (questionTypeEnum) {

@@ -3,6 +3,7 @@ package com.mindskip.xzs.domain.enums;
 import java.util.HashMap;
 import java.util.Map;
 
+//试卷页面类型枚举
 public enum ExamPaperTypeEnum {
 
     Fixed(1, "固定试卷"),

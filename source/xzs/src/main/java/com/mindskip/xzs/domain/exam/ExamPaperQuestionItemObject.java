@@ -1,5 +1,6 @@
 package com.mindskip.xzs.domain.exam;
 
+//试卷页面题目项目对象
 public class ExamPaperQuestionItemObject {
     private Integer id;
     private Integer itemOrder;

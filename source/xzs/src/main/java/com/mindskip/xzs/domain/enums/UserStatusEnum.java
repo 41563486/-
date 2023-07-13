@@ -4,6 +4,7 @@ package com.mindskip.xzs.domain.enums;
 import java.util.HashMap;
 import java.util.Map;
 
+//用户状态枚举
 public enum UserStatusEnum {
 
     Enable(1, "启用"),

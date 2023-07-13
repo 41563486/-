@@ -3,6 +3,7 @@ package com.mindskip.xzs.domain.exam;
 
 import java.util.List;
 
+//试卷题目项目对象
 public class ExamPaperTitleItemObject {
 
     private String name;

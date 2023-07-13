@@ -15,6 +15,8 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+//试卷答案页面
+
 @RestController("AdminExamPaperAnswerController")
 @RequestMapping(value = "/api/admin/examPaperAnswer")
 public class ExamPaperAnswerController extends BaseApiController {
@@ -23,6 +25,7 @@ public class ExamPaperAnswerController extends BaseApiController {
     private final SubjectService subjectService;
     private final UserService userService;
 
+    //构造器注入
     @Autowired
     public ExamPaperAnswerController(ExamPaperAnswerService examPaperAnswerService, SubjectService subjectService, UserService userService) {
         this.examPaperAnswerService = examPaperAnswerService;
@@ -31,9 +34,11 @@ public class ExamPaperAnswerController extends BaseApiController {
     }
 
 
+    //页面信息列表处理
     @RequestMapping(value = "/page", method = RequestMethod.POST)
     public RestResponse<PageInfo<ExamPaperAnswerPageResponseVM>> pageJudgeList(@RequestBody ExamPaperAnswerPageRequestVM model) {
         PageInfo<ExamPaperAnswer> pageInfo = examPaperAnswerService.adminPage(model);
+        //lambda表达式
         PageInfo<ExamPaperAnswerPageResponseVM> page = PageInfoHelper.copyMap(pageInfo, e -> {
             ExamPaperAnswerPageResponseVM vm = modelMapper.map(e, ExamPaperAnswerPageResponseVM.class);
             Subject subject = subjectService.selectById(vm.getSubjectId());

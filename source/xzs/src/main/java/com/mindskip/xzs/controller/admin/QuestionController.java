@@ -22,6 +22,7 @@ import javax.validation.Valid;
 
 @RestController("AdminQuestionController")
 @RequestMapping(value = "/api/admin/question")
+//题目控制器
 public class QuestionController extends BaseApiController {
 
     private final QuestionService questionService;
@@ -33,6 +34,7 @@ public class QuestionController extends BaseApiController {
         this.textContentService = textContentService;
     }
 
+    //页面数据
     @RequestMapping(value = "/page", method = RequestMethod.POST)
     public RestResponse<PageInfo<QuestionResponseVM>> pageList(@RequestBody QuestionPageRequestVM model) {
         PageInfo<Question> pageInfo = questionService.page(model);
@@ -49,6 +51,7 @@ public class QuestionController extends BaseApiController {
         return RestResponse.ok(page);
     }
 
+    //编辑器
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
     public RestResponse edit(@RequestBody @Valid QuestionEditRequestVM model) {
         RestResponse validQuestionEditRequestResult = validQuestionEditRequestVM(model);
@@ -65,6 +68,7 @@ public class QuestionController extends BaseApiController {
         return RestResponse.ok();
     }
 
+    //查询
     @RequestMapping(value = "/select/{id}", method = RequestMethod.POST)
     public RestResponse<QuestionEditRequestVM> select(@PathVariable Integer id) {
         QuestionEditRequestVM newVM = questionService.getQuestionEditRequestVM(id);
@@ -72,6 +76,7 @@ public class QuestionController extends BaseApiController {
     }
 
 
+    //删除
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
     public RestResponse delete(@PathVariable Integer id) {
         Question question = questionService.selectById(id);
@@ -80,8 +85,10 @@ public class QuestionController extends BaseApiController {
         return RestResponse.ok();
     }
 
+    //题目类型
     private RestResponse validQuestionEditRequestVM(QuestionEditRequestVM model) {
         int qType = model.getQuestionType().intValue();
+        //单选和判断的分值判断
         boolean requireCorrect = qType == QuestionTypeEnum.SingleChoice.getCode() || qType == QuestionTypeEnum.TrueFalse.getCode();
         if (requireCorrect) {
             if (StringUtils.isBlank(model.getCorrect())) {
@@ -90,6 +97,7 @@ public class QuestionController extends BaseApiController {
             }
         }
 
+        //填空题的分值判断
         if (qType == QuestionTypeEnum.GapFilling.getCode()) {
             Integer fillSumScore = model.getItems().stream().mapToInt(d -> ExamUtil.scoreFromVM(d.getScore())).sum();
             Integer questionScore = ExamUtil.scoreFromVM(model.getScore());

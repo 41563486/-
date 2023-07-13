@@ -1,5 +1,7 @@
 package com.mindskip.xzs.domain.enums;
 
+
+//题目状态枚举
 public enum QuestionStatusEnum {
 
     OK(1, "正常"),

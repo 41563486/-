@@ -3,6 +3,7 @@ package com.mindskip.xzs.domain.enums;
 import java.util.HashMap;
 import java.util.Map;
 
+//试卷状态答案枚举
 public enum ExamPaperAnswerStatusEnum {
 
     WaitJudge(1, "待批改"),
@@ -36,12 +37,14 @@ public enum ExamPaperAnswerStatusEnum {
 
     private static final Map<Integer, ExamPaperAnswerStatusEnum> keyMap = new HashMap<>();
 
+    //存放状态
     static {
         for (ExamPaperAnswerStatusEnum item : ExamPaperAnswerStatusEnum.values()) {
             keyMap.put(item.getCode(), item);
         }
     }
 
+    //返回状态码
     public static ExamPaperAnswerStatusEnum fromCode(Integer code) {
         return keyMap.get(code);
     }

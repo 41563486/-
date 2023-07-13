@@ -4,6 +4,7 @@ package com.mindskip.xzs.domain.enums;
 import java.util.HashMap;
 import java.util.Map;
 
+//规则枚举
 public enum RoleEnum {
 
     STUDENT(1, "STUDENT"),

@@ -26,6 +26,7 @@ import java.util.UUID;
 
 @RestController("AdminUserController")
 @RequestMapping(value = "/api/admin/user")
+//用户界面控制器
 public class UserController extends BaseApiController {
 
     private final UserService userService;
@@ -40,6 +41,7 @@ public class UserController extends BaseApiController {
     }
 
 
+    //页面数据
     @RequestMapping(value = "/page/list", method = RequestMethod.POST)
     public RestResponse<PageInfo<UserResponseVM>> pageList(@RequestBody UserPageRequestVM model) {
         PageInfo<User> pageInfo = userService.userPage(model);
@@ -48,6 +50,7 @@ public class UserController extends BaseApiController {
     }
 
 
+    //事件页面数据
     @RequestMapping(value = "/event/page/list", method = RequestMethod.POST)
     public RestResponse<PageInfo<UserEventLogVM>> eventPageList(@RequestBody UserEventPageRequestVM model) {
         PageInfo<UserEventLog> pageInfo = userEventLogService.page(model);
@@ -59,6 +62,7 @@ public class UserController extends BaseApiController {
         return RestResponse.ok(page);
     }
 
+    //查询
     @RequestMapping(value = "/select/{id}", method = RequestMethod.POST)
     public RestResponse<UserResponseVM> select(@PathVariable Integer id) {
         User user = userService.getUserById(id);
@@ -66,6 +70,7 @@ public class UserController extends BaseApiController {
         return RestResponse.ok(userVm);
     }
 
+    //当前用户
     @RequestMapping(value = "/current", method = RequestMethod.POST)
     public RestResponse<UserResponseVM> current() {
         User user = getCurrentUser();
@@ -74,6 +79,7 @@ public class UserController extends BaseApiController {
     }
 
 
+    //编辑
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
     public RestResponse<User> edit(@RequestBody @Valid UserCreateVM model) {
         if (model.getId() == null) {  //create
@@ -111,6 +117,7 @@ public class UserController extends BaseApiController {
     }
 
 
+    //通过id查询用户
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public RestResponse update(@RequestBody @Valid UserUpdateVM model) {
         User user = userService.selectById(getCurrentUser().getId());
@@ -121,6 +128,7 @@ public class UserController extends BaseApiController {
     }
 
 
+    //改变状态
     @RequestMapping(value = "/changeStatus/{id}", method = RequestMethod.POST)
     public RestResponse<Integer> changeStatus(@PathVariable Integer id) {
         User user = userService.getUserById(id);
@@ -133,6 +141,7 @@ public class UserController extends BaseApiController {
     }
 
 
+    //删除
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
     public RestResponse delete(@PathVariable Integer id) {
         User user = userService.getUserById(id);
@@ -142,6 +151,7 @@ public class UserController extends BaseApiController {
     }
 
 
+    //通过用户名查询
     @RequestMapping(value = "/selectByUserName", method = RequestMethod.POST)
     public RestResponse<List<KeyValue>> selectByUserName(@RequestBody String userName) {
         List<KeyValue> keyValues = userService.selectByUserName(userName);

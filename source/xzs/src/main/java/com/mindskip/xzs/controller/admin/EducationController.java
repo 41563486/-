@@ -65,6 +65,7 @@ public class EducationController extends BaseApiController {
         return RestResponse.ok();
     }
 
+    //年级标签选择
     @RequestMapping(value = "/subject/select/{id}", method = RequestMethod.POST)
     public RestResponse<SubjectEditRequestVM> select(@PathVariable Integer id) {
         Subject subject = subjectService.selectById(id);
@@ -72,6 +73,8 @@ public class EducationController extends BaseApiController {
         return RestResponse.ok(vm);
     }
 
+    //删除学科名称
+    //@PathVariable 注解可以用于将请求 URL 中的变量值绑定到方法的参数上
     @RequestMapping(value = "/subject/delete/{id}", method = RequestMethod.POST)
     public RestResponse delete(@PathVariable Integer id) {
         Subject subject = subjectService.selectById(id);

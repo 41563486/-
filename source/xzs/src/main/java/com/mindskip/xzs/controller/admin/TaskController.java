@@ -18,6 +18,7 @@ import javax.validation.Valid;
 
 @RestController("AdminTaskController")
 @RequestMapping(value = "/api/admin/task")
+//任务列表控制器
 public class TaskController extends BaseApiController {
 
     private final TaskExamService taskExamService;
@@ -27,6 +28,7 @@ public class TaskController extends BaseApiController {
         this.taskExamService = taskExamService;
     }
 
+    //页面数据
     @RequestMapping(value = "/page", method = RequestMethod.POST)
     public RestResponse<PageInfo<TaskPageResponseVM>> pageList(@RequestBody TaskPageRequestVM model) {
         PageInfo<TaskExam> pageInfo = taskExamService.page(model);
@@ -39,6 +41,7 @@ public class TaskController extends BaseApiController {
     }
 
 
+    //编辑
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
     public RestResponse edit(@RequestBody @Valid TaskRequestVM model) {
         taskExamService.edit(model, getCurrentUser());
@@ -47,12 +50,14 @@ public class TaskController extends BaseApiController {
     }
 
 
+    //查询
     @RequestMapping(value = "/select/{id}", method = RequestMethod.POST)
     public RestResponse<TaskRequestVM> select(@PathVariable Integer id) {
         TaskRequestVM vm = taskExamService.taskExamToVM(id);
         return RestResponse.ok(vm);
     }
 
+    //删除
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
     public RestResponse delete(@PathVariable Integer id) {
         TaskExam taskExam = taskExamService.selectById(id);
