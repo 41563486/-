@@ -1,6 +1,7 @@
 package com.mindskip.xzs.domain.question;
 
 
+//题目项目对象
 public class QuestionItemObject {
 
     private String prefix;

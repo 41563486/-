@@ -3,6 +3,8 @@ package com.mindskip.xzs.domain;
 import java.io.Serializable;
 import java.util.Date;
 
+//试卷表
+//目的是为了通过io传输。实现序列化接口是为了能保存到磁盘上，在网络上传输对象
 public class ExamPaper implements Serializable {
 
     private static final long serialVersionUID = 8509645224550501395L;

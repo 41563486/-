@@ -1,6 +1,8 @@
 package com.mindskip.xzs.viewmodel.admin.paper;
 
 
+
+//试卷答案响应vm
 public class ExamAnswerResponseVM {
     private Integer id;
 

@@ -2,6 +2,8 @@ package com.mindskip.xzs.domain;
 
 import java.io.Serializable;
 
+
+//学科
 public class Subject implements Serializable {
 
     private static final long serialVersionUID = 8058095034457106501L;

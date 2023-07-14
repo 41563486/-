@@ -3,6 +3,7 @@ package com.mindskip.xzs.viewmodel.admin.exam;
 
 
 
+//试卷响应vm
 public class ExamResponseVM {
     private Integer id;
 

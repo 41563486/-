@@ -1,6 +1,7 @@
 package com.mindskip.xzs.domain.task;
 
 
+//任务项目答案对象
 public class TaskItemAnswerObject {
     private Integer examPaperId;
     private Integer examPaperAnswerId;

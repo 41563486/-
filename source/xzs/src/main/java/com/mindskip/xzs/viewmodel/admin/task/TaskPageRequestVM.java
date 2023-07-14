@@ -4,6 +4,7 @@ import com.mindskip.xzs.base.BasePage;
 
 
 
+//任务分页请求vm
 public class TaskPageRequestVM extends BasePage {
     private Integer gradeLevel;
 

@@ -3,6 +3,7 @@ package com.mindskip.xzs.domain;
 import java.io.Serializable;
 import java.util.Date;
 
+//用户事件日志
 public class UserEventLog implements Serializable {
 
     private static final long serialVersionUID = -3951198127152024633L;

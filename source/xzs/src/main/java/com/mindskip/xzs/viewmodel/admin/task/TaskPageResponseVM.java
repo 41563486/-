@@ -5,6 +5,8 @@ package com.mindskip.xzs.viewmodel.admin.task;
 import java.util.Date;
 
 
+
+//任务分页请求vm
 public class TaskPageResponseVM {
 
     private Integer id;

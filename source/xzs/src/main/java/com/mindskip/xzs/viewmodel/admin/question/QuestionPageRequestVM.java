@@ -4,6 +4,7 @@ import com.mindskip.xzs.base.BasePage;
 
 
 
+//问题分页请求vm
 public class QuestionPageRequestVM extends BasePage {
 
     private Integer id;

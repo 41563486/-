@@ -7,6 +7,7 @@ import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
+//题目服务
 public interface QuestionService extends BaseService<Question> {
 
     PageInfo<Question> page(QuestionPageRequestVM requestVM);

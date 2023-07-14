@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
  * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
  * @date 2021/12/25 9:45
  */
+//分页信息帮助
 public class PageInfoHelper {
 
     /**
@@ -22,6 +23,7 @@ public class PageInfoHelper {
      * @param mapper the mapper
      * @return the page info
      */
+    //设置分页的参数
     public static <T, J> PageInfo<J> copyMap(PageInfo<T> source, Function<? super T, ? extends J> mapper) {
         PageInfo<J> newPage = new PageInfo<>();
         newPage.setPageNum(source.getPageNum());

@@ -4,6 +4,7 @@ import com.mindskip.xzs.viewmodel.BaseVM;
 
 
 
+//问题响应vm
 public class QuestionResponseVM extends BaseVM {
 
     private Integer id;

@@ -1,5 +1,6 @@
 package com.mindskip.xzs.service.enums;
 
+//活动状态枚举
 public enum ActionEnum {
 
     ADD(1, "新增"),

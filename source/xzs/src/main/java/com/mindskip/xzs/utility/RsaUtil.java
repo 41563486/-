@@ -15,9 +15,9 @@ import java.util.Base64;
 /**
  * @version 3.5.0
  * @description: The type Rsa util.
- * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
- * @date 2021/12/25 9:45
+
  */
+//RSA加密工具类
 public class RsaUtil {
     /**
      * String to hold name of the encryption algorithm.
@@ -35,6 +35,7 @@ public class RsaUtil {
      * @param text              the text
      * @return the string
      */
+    //RSA编码
     public static String rsaEncode(String publicCertificate, String text) {
         try {
             byte[] publicBytes = baseStrToByte(publicCertificate);

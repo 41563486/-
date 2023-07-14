@@ -3,6 +3,7 @@ package com.mindskip.xzs.service;
 import com.mindskip.xzs.domain.User;
 import com.mindskip.xzs.domain.UserToken;
 
+//用户token服务
 public interface UserTokenService extends BaseService<UserToken> {
 
     /**

@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.function.Function;
 
+//文本内容服务
 public interface TextContentService extends BaseService<TextContent> {
 
     /**

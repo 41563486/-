@@ -9,6 +9,7 @@ import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
+//试卷答案
 public interface ExamPaperAnswerService extends BaseService<ExamPaperAnswer> {
 
     /**

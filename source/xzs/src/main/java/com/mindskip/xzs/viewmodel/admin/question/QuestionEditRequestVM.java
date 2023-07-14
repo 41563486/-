@@ -7,7 +7,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.*;
 import java.util.List;
 
-
+//问题编辑请求vm
 public class QuestionEditRequestVM {
 
     private Integer id;

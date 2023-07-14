@@ -4,6 +4,7 @@ package com.mindskip.xzs.viewmodel.admin.question;
 import javax.validation.constraints.NotBlank;
 
 
+//问题编辑项目vm
 public class QuestionEditItemVM {
     @NotBlank
     private String prefix;

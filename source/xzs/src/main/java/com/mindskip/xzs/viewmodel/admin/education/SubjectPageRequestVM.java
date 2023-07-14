@@ -3,7 +3,7 @@ package com.mindskip.xzs.viewmodel.admin.education;
 import com.mindskip.xzs.base.BasePage;
 
 
-
+//学科分页视图模块
 public class SubjectPageRequestVM extends BasePage {
     private Integer id;
     private Integer level;

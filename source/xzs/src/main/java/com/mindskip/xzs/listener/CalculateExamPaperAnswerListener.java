@@ -23,6 +23,7 @@ import java.util.List;
  * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
  * @date 2021/12/25 9:45
  */
+//计算考试答案监听器
 @Component
 public class CalculateExamPaperAnswerListener implements ApplicationListener<CalculateExamPaperAnswerCompleteEvent> {
 
@@ -39,6 +40,7 @@ public class CalculateExamPaperAnswerListener implements ApplicationListener<Cal
      * @param textContentService                     the text content service
      * @param examCustomerAnswerService              the exam customer answer service
      */
+
     @Autowired
     public CalculateExamPaperAnswerListener(ExamPaperAnswerService examPaperAnswerService, ExamPaperQuestionCustomerAnswerService examPaperQuestionCustomerAnswerService, TextContentService textContentService, TaskExamCustomerAnswerService examCustomerAnswerService) {
         this.examPaperAnswerService = examPaperAnswerService;
@@ -48,27 +50,36 @@ public class CalculateExamPaperAnswerListener implements ApplicationListener<Cal
     }
 
     @Override
+    //事务管理注解
     @Transactional
+    //事件触发
     public void onApplicationEvent(CalculateExamPaperAnswerCompleteEvent calculateExamPaperAnswerCompleteEvent) {
         Date now = new Date();
-
+        //获取触发对象的信息
         ExamPaperAnswerInfo examPaperAnswerInfo = (ExamPaperAnswerInfo) calculateExamPaperAnswerCompleteEvent.getSource();
+        //获取对象试卷
         ExamPaper examPaper = examPaperAnswerInfo.getExamPaper();
+        //获取试卷的答案
         ExamPaperAnswer examPaperAnswer = examPaperAnswerInfo.getExamPaperAnswer();
         List<ExamPaperQuestionCustomerAnswer> examPaperQuestionCustomerAnswers = examPaperAnswerInfo.getExamPaperQuestionCustomerAnswers();
-
         examPaperAnswerService.insertByFilter(examPaperAnswer);
+        //将用户的试卷答案转换成流然后进行数据过滤，将答案存入数据层，并使用foreach（可使用lambda表示式）对数据进行处理
         examPaperQuestionCustomerAnswers.stream().filter(a -> QuestionTypeEnum.needSaveTextContent(a.getQuestionType())).forEach(d -> {
+            //获取文本内容的答案和当前时间
             TextContent textContent = new TextContent(d.getAnswer(), now);
+            //将文本内定答案存入数据层
             textContentService.insertByFilter(textContent);
             d.setTextContentId(textContent.getId());
+            //清空
             d.setAnswer(null);
         });
+        //给每个答案设置id
         examPaperQuestionCustomerAnswers.forEach(d -> {
             d.setExamPaperAnswerId(examPaperAnswer.getId());
         });
+        //答案入库
         examPaperQuestionCustomerAnswerService.insertList(examPaperQuestionCustomerAnswers);
-
+        //遍历出任务试卷
         switch (ExamPaperTypeEnum.fromCode(examPaper.getPaperType())) {
             case Task: {
                 examCustomerAnswerService.insertOrUpdate(examPaper, examPaperAnswer, now);

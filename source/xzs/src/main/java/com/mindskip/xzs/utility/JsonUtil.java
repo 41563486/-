@@ -18,6 +18,7 @@ import java.util.List;
  * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
  * @date 2021/12/25 9:45
  */
+//json工具类
 public class JsonUtil {
     private static final ObjectMapper MAPPER = new ObjectMapper();
     private static final Logger logger = LoggerFactory.getLogger(JsonUtil.class);

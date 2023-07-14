@@ -5,6 +5,7 @@ import com.mindskip.xzs.utility.DateTimeUtil;
 import com.mindskip.xzs.viewmodel.BaseVM;
 
 
+//用户响应vm
 public class UserResponseVM extends BaseVM {
 
     private Integer id;

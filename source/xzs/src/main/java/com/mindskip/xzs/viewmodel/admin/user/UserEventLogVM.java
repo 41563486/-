@@ -3,6 +3,7 @@ package com.mindskip.xzs.viewmodel.admin.user;
 
 
 
+//用户日志事件vm
 public class UserEventLogVM {
 
     private Integer id;

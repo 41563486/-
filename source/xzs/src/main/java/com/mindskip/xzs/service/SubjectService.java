@@ -6,6 +6,8 @@ import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
+
+//学科服务
 public interface SubjectService extends BaseService<Subject> {
 
     List<Subject> getSubjectByLevel(Integer level);

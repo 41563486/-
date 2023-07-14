@@ -8,6 +8,7 @@ import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
+//消息服务
 public interface MessageService {
 
     List<Message> selectMessageByIds(List<Integer> ids);

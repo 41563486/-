@@ -3,6 +3,7 @@ package com.mindskip.xzs.domain;
 
 import java.util.List;
 
+//试卷答案信息
 public class ExamPaperAnswerInfo {
     public ExamPaper examPaper;
     public ExamPaperAnswer examPaperAnswer;

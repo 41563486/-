@@ -1,6 +1,7 @@
 package com.mindskip.xzs.domain.other;
 
 
+//键值
 public class KeyValue {
 
     private String name;

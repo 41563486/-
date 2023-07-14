@@ -8,10 +8,14 @@ import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
+
+//客户试卷题目答案
 public interface ExamPaperQuestionCustomerAnswerService extends BaseService<ExamPaperQuestionCustomerAnswer> {
 
+    //学生分页
     PageInfo<ExamPaperQuestionCustomerAnswer> studentPage(QuestionPageStudentRequestVM requestVM);
 
+    //根据试卷答案id查询
     List<ExamPaperQuestionCustomerAnswer> selectListByPaperAnswerId(Integer id);
 
     /**

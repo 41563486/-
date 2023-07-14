@@ -4,6 +4,7 @@ import com.mindskip.xzs.base.BasePage;
 
 
 
+//信息分页请求vm
 public class MessagePageRequestVM extends BasePage {
     private String sendUserName;
 

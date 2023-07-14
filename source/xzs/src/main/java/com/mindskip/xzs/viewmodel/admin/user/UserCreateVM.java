@@ -5,6 +5,7 @@ package com.mindskip.xzs.viewmodel.admin.user;
 import javax.validation.constraints.NotBlank;
 
 
+//创建用户vm
 public class UserCreateVM {
 
     private Integer id;

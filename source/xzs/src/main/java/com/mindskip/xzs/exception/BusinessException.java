@@ -6,6 +6,7 @@ package com.mindskip.xzs.exception;
  * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
  * @date 2021/12/25 9:45
  */
+//商业错误处理类
 public class BusinessException extends RuntimeException {
 
     /**

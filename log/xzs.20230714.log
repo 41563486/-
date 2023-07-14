@@ -1,0 +1,48 @@
+2023-07-14 11:02:38.982  INFO 15172 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-14 11:02:39.007  INFO 15172 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-14 11:02:39.018  INFO 15172 --- [Thread-7] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-14 14:43:08.466  INFO 21004 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on 华硕无畏pro14 with PID 21004 (started by 彼方 in E:\笔记\java\项目实战\学而思项目\xzs-mysql)
+2023-07-14 14:43:08.468  INFO 21004 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2023-07-14 14:43:08.497  INFO 21004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-14 14:43:08.497  INFO 21004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-14 14:43:09.410  WARN 21004 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-07-14 14:43:09.430  INFO 21004 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-07-14 14:43:09.431  INFO 21004 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 934 ms
+2023-07-14 14:43:10.148  INFO 21004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1897093, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f29a08c, org.springframework.security.web.header.HeaderWriterFilter@286448cb, org.springframework.web.filter.CorsFilter@1bad211d, org.springframework.security.web.authentication.logout.LogoutFilter@ed1271c, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@1b65998d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11e1155a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3314627c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34872417, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@482014dd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3152cf27, org.springframework.security.web.session.SessionManagementFilter@37d6d574, org.springframework.security.web.access.ExceptionTranslationFilter@30dc8d6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3cc424dc]
+2023-07-14 14:43:10.367  INFO 21004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-14 14:43:10.408  INFO 21004 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2023-07-14 14:43:10.413  INFO 21004 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2023-07-14 14:43:10.452  INFO 21004 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2023-07-14 14:43:10.456  INFO 21004 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 2.303 seconds (JVM running for 3.215)
+2023-07-14 14:44:07.199  INFO 21004 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-14 14:44:07.200  INFO 21004 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-14 14:44:07.212  INFO 21004 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2023-07-14 14:44:07.259  INFO 21004 --- [XNIO-1 task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-14 14:44:07.388  INFO 21004 --- [XNIO-1 task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-14 14:44:07.397 DEBUG 21004 --- [XNIO-1 task-1] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-07-14 14:44:07.424 DEBUG 21004 --- [XNIO-1 task-1] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-07-14 14:44:07.444 DEBUG 21004 --- [XNIO-1 task-1] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-07-14 14:44:07.453 DEBUG 21004 --- [XNIO-1 task-1] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-07-14 14:44:07.453 DEBUG 21004 --- [XNIO-1 task-1] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-07-14 14:44:07.455 DEBUG 21004 --- [XNIO-1 task-1] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-07-14 14:44:07.612 DEBUG 21004 --- [XNIO-1 task-1] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2023-07-14 14:44:07.613 DEBUG 21004 --- [XNIO-1 task-1] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2023-07-14 14:44:07.614 DEBUG 21004 --- [XNIO-1 task-1] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2023-07-14 14:44:07.617 DEBUG 21004 --- [XNIO-1 task-1] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2023-07-14 14:44:07.617 DEBUG 21004 --- [XNIO-1 task-1] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2023-07-14 14:44:07.618 DEBUG 21004 --- [XNIO-1 task-1] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 1
+2023-07-14 17:05:34.389 DEBUG 21004 --- [XNIO-1 task-4] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-07-14 17:05:34.395 DEBUG 21004 --- [XNIO-1 task-4] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-07-14 17:05:34.406 DEBUG 21004 --- [XNIO-1 task-4] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-07-14 17:05:34.409 DEBUG 21004 --- [XNIO-1 task-4] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-07-14 17:05:34.409 DEBUG 21004 --- [XNIO-1 task-4] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-07-14 17:05:34.411 DEBUG 21004 --- [XNIO-1 task-4] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-07-14 17:05:34.435 DEBUG 21004 --- [XNIO-1 task-4] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2023-07-14 17:05:34.435 DEBUG 21004 --- [XNIO-1 task-4] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2023-07-14 17:05:34.437 DEBUG 21004 --- [XNIO-1 task-4] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2023-07-14 17:05:34.438 DEBUG 21004 --- [XNIO-1 task-4] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2023-07-14 17:05:34.439 DEBUG 21004 --- [XNIO-1 task-4] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2023-07-14 17:05:34.440 DEBUG 21004 --- [XNIO-1 task-4] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 1
+2023-07-14 17:05:54.024 DEBUG 21004 --- [XNIO-1 task-5] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-07-14 17:05:54.025 DEBUG 21004 --- [XNIO-1 task-5] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-07-14 17:05:54.026 DEBUG 21004 --- [XNIO-1 task-5] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1

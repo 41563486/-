@@ -5,6 +5,7 @@ package com.mindskip.xzs.viewmodel.admin.message;
 import java.util.Date;
 
 
+//消息响应vm
 public class MessageResponseVM {
     private Integer id;
 

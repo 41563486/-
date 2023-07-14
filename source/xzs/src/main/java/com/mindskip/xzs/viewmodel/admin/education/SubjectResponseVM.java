@@ -4,6 +4,7 @@ import com.mindskip.xzs.viewmodel.BaseVM;
 
 
 
+//学科响应视图模块
 public class SubjectResponseVM extends BaseVM {
     private Integer id;
 

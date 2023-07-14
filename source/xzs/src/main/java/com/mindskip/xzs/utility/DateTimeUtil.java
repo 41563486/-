@@ -28,7 +28,7 @@ public class DateTimeUtil {
     public static final String STANDER_SHORT_FORMAT = "yyyy-MM-dd";
 
     /**
-     * Add duration date.
+     * Add duration date. 添加持续时间
      *
      * @param date     the date
      * @param duration the duration
@@ -47,6 +47,7 @@ public class DateTimeUtil {
      * @param date the date
      * @return the string
      */
+    //格式化日期
     public static String dateFormat(Date date) {
         if (null == date) {
             return "";
@@ -61,6 +62,7 @@ public class DateTimeUtil {
      * @param date the date
      * @return the string
      */
+    //格式化短日期
     public static String dateShortFormat(Date date) {
         if (null == date) {
             return "";
@@ -76,6 +78,7 @@ public class DateTimeUtil {
      * @param format  the format
      * @return the date
      */
+    //解析
     public static Date parse(String dateStr, String format) {
         try {
             return new SimpleDateFormat(format).parse(dateStr);

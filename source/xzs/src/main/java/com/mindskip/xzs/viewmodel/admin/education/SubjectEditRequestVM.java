@@ -6,7 +6,7 @@ import com.mindskip.xzs.viewmodel.BaseVM;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-
+//科目编辑的请求视图
 public class SubjectEditRequestVM extends BaseVM {
 
     private Integer id;

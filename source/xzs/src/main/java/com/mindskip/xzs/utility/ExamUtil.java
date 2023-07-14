@@ -19,6 +19,7 @@ public class ExamUtil {
      * @param score the score
      * @return the string
      */
+    //分数转换成视图
     public static String scoreToVM(Integer score) {
         if (score % 10 == 0) {
             return String.valueOf(score / 10);
@@ -33,6 +34,7 @@ public class ExamUtil {
      * @param score the score
      * @return the integer
      */
+    //视图的分数
     public static Integer scoreFromVM(String score) {
         if (score == null) {
             return null;
@@ -47,6 +49,7 @@ public class ExamUtil {
      * @param second the second
      * @return the string
      */
+    //时分秒转换成视图
     public static String secondToVM(Integer second) {
         String dateTimes;
         long days = second / (60 * 60 * 24);
@@ -73,6 +76,7 @@ public class ExamUtil {
      * @param contentArray the content array
      * @return the string
      */
+    //内容转字符串
     public static String contentToString(List<String> contentArray) {
         return contentArray.stream().sorted().collect(Collectors.joining(ANSWER_SPLIT));
     }
@@ -84,6 +88,7 @@ public class ExamUtil {
      * @param contentArray the content array
      * @return the list
      */
+    //内容转数组
     public static List<String> contentToArray(String contentArray) {
         return Arrays.asList(contentArray.split(ANSWER_SPLIT));
     }
@@ -96,6 +101,7 @@ public class ExamUtil {
      * @param str the str
      * @return the integer
      */
+    //最后一个数
     public static Integer lastNum(String str) {
         Integer start = str.lastIndexOf(FORM_ANSWER_SPLIT);
         return Integer.parseInt(str.substring(start + 1));

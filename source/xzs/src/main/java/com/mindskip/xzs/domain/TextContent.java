@@ -3,6 +3,7 @@ package com.mindskip.xzs.domain;
 import java.io.Serializable;
 import java.util.Date;
 
+//文本内容
 public class TextContent implements Serializable {
 
     private static final long serialVersionUID = -1279530310964668131L;

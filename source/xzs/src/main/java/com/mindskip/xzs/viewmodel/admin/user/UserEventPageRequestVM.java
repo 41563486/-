@@ -5,6 +5,7 @@ import com.mindskip.xzs.base.BasePage;
 
 
 
+//用户事件分页请求vm
 public class UserEventPageRequestVM extends BasePage {
 
     private Integer userId;

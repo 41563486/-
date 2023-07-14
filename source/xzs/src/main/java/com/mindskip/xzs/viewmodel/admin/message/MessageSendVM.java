@@ -7,6 +7,7 @@ import javax.validation.constraints.Size;
 import java.util.List;
 
 
+//消息发送者vm
 public class MessageSendVM {
 
     @NotBlank

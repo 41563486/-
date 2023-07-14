@@ -4,6 +4,7 @@ package com.mindskip.xzs.domain.question;
 
 import java.util.List;
 
+//题目对象
 public class QuestionObject {
 
     private String titleContent;

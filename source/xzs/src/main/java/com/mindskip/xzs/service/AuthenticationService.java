@@ -3,6 +3,7 @@ package com.mindskip.xzs.service;
 import com.mindskip.xzs.domain.User;
 
 
+//认证服务
 public interface AuthenticationService {
 
     /**
@@ -27,7 +28,7 @@ public interface AuthenticationService {
     boolean authUser(User user, String username, String password);
 
     /**
-     * pwdEncode
+     * pwdEncode 密码编码
      *
      * @param password password
      * @return String
@@ -35,7 +36,7 @@ public interface AuthenticationService {
     String pwdEncode(String password);
 
     /**
-     * pwdDecode
+     * pwdDecode 密码解码
      *
      * @param endodePwd endodePwd
      * @return String

@@ -3,6 +3,7 @@ package com.mindskip.xzs.viewmodel.admin.file;
 
 
 
+//上传结果vm
 public class UploadResultVM {
     private String original;
     private String name;

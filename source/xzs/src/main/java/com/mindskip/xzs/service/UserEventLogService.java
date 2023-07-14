@@ -6,6 +6,7 @@ import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
+//用户事件日志服务
 public interface UserEventLogService extends BaseService<UserEventLog> {
 
     List<UserEventLog> getUserEventLogByUserId(Integer id);

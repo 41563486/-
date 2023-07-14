@@ -9,6 +9,7 @@ import javax.validation.constraints.Size;
 import java.util.List;
 
 
+//试卷编辑请求视图中间模块
 public class ExamPaperEditRequestVM {
     private Integer id;
     @NotNull

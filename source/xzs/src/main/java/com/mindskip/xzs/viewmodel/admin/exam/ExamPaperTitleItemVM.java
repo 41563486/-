@@ -9,6 +9,7 @@ import javax.validation.constraints.Size;
 import java.util.List;
 
 
+//试卷项目题目vm
 public class ExamPaperTitleItemVM {
 
     @NotBlank(message = "标题内容不能为空")

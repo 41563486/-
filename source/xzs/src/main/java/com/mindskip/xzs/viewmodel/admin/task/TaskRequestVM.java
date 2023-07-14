@@ -9,6 +9,7 @@ import javax.validation.constraints.Size;
 import java.util.List;
 
 
+//任务请求vm
 public class TaskRequestVM {
 
     private Integer id;

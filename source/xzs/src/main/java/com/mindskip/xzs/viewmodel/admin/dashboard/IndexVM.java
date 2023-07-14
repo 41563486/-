@@ -5,6 +5,7 @@ package com.mindskip.xzs.viewmodel.admin.dashboard;
 import java.util.List;
 
 
+//索引视图
 public class IndexVM {
     private Integer examPaperCount;
     private Integer questionCount;

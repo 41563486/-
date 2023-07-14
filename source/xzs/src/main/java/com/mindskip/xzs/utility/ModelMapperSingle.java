@@ -9,6 +9,7 @@ import org.modelmapper.convention.MatchingStrategies;
  * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
  * @date 2021/12/25 9:45
  */
+//模块映射单例
 public class ModelMapperSingle {
     /**
      * The constant modelMapper.

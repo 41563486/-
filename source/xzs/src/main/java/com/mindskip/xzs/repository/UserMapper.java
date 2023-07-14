@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 import java.util.Map;
 
-
+//用户映射
 @Mapper
 public interface UserMapper extends BaseMapper<User> {
 

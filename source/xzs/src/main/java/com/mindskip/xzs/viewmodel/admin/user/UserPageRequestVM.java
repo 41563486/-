@@ -3,6 +3,7 @@ package com.mindskip.xzs.viewmodel.admin.user;
 import com.mindskip.xzs.base.BasePage;
 
 
+//用户分页请求vm
 public class UserPageRequestVM extends BasePage {
 
     private String userName;

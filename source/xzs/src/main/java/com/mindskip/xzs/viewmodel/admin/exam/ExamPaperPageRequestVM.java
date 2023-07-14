@@ -3,6 +3,7 @@ package com.mindskip.xzs.viewmodel.admin.exam;
 import com.mindskip.xzs.base.BasePage;
 
 
+//试卷分页请求vm
 
 public class ExamPaperPageRequestVM extends BasePage {
 

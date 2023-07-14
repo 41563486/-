@@ -12,6 +12,8 @@ import org.springframework.stereotype.Component;
  * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
  * @date 2021/12/25 9:45
  */
+
+//用户日志监听器
 @Component
 public class UserLogListener implements ApplicationListener<UserEvent> {
 
@@ -27,6 +29,7 @@ public class UserLogListener implements ApplicationListener<UserEvent> {
         this.userEventLogService = userEventLogService;
     }
 
+    //用户日志数据入库
     @Override
     public void onApplicationEvent(UserEvent userEvent) {
         userEventLogService.insertByFilter(userEvent.getUserEventLog());

@@ -5,6 +5,7 @@ package com.mindskip.xzs.viewmodel.admin.file;
 import java.util.List;
 
 
+//编者设置vm
 public class UeditorConfigVM {
     private String imageActionName;
     private  String imageFieldName;

@@ -5,6 +5,7 @@ package com.mindskip.xzs.viewmodel.admin.user;
 import javax.validation.constraints.NotBlank;
 
 
+//用户更新vm
 public class UserUpdateVM {
 
     @NotBlank
