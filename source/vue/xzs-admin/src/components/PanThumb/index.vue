@@ -11,6 +11,7 @@
 
 <script>
 export default {
+  // 缩略图的图标的样式
   name: 'PanThumb',
   props: {
     image: {

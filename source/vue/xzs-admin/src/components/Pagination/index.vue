@@ -16,7 +16,7 @@
 
 <script>
 import { scrollTo } from '@/utils/scroll-to'
-
+//  分页器和滚动条
 export default {
   name: 'Pagination',
   props: {
@@ -74,14 +74,18 @@ export default {
     }
   },
   methods: {
+    // 处理大小变化
     handleSizeChange (val) {
       this.$emit('pagination', { page: this.currentPage, limit: val })
+      // 自动滑动回顶点
       if (this.autoScroll) {
         scrollTo(0, 800)
       }
     },
+    // 处理目前的变化
     handleCurrentChange (val) {
       this.$emit('pagination', { page: val, limit: this.pageSize })
+      // 自动滑动回顶点
       if (this.autoScroll) {
         scrollTo(0, 800)
       }

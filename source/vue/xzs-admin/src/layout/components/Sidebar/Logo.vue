@@ -1,12 +1,13 @@
 <template>
   <div class="sidebar-logo-container" :class="{'collapse':collapse}">
+    <!-- transition 加上过渡效果   -->
     <transition name="sidebarLogoFade">
       <router-link v-if="collapse" key="collapse" class="sidebar-logo-link" to="/">
-        <img  src="@/assets/logo.png" class="sidebar-logo">
-        <h1  class="sidebar-title">{{ title }} </h1>
+        <img src="@/assets/logo.png" class="sidebar-logo">
+        <h1 class="sidebar-title">{{ title }} </h1>
       </router-link>
       <router-link v-else key="expand" class="sidebar-logo-link" to="/">
-        <img  src="@/assets/logo.png" class="sidebar-logo">
+        <img src="@/assets/logo.png" class="sidebar-logo">
         <h1 class="sidebar-title">{{ title }} </h1>
       </router-link>
     </transition>
@@ -14,17 +15,20 @@
 </template>
 
 <script>
+// 此组件为logo的样式
 export default {
   name: 'SidebarLogo',
   props: {
+    // 判断是否折叠
     collapse: {
       type: Boolean,
+      // 该属性是必须的
       required: true
     }
   },
   data () {
     return {
-      title: '学之思管理系统'
+      title: '在线考试管理系统'
     }
   }
 }

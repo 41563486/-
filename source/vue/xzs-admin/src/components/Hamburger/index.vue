@@ -15,6 +15,7 @@
 
 <script>
 export default {
+  // 汉堡图标，点击了能展开左边栏
   name: 'Hamburger',
   props: {
     isActive: {

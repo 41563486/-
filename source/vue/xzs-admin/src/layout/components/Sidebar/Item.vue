@@ -1,4 +1,5 @@
 <script>
+// 侧边栏logo和字符串数据处理
 export default {
   name: 'MenuItem',
   functional: true,

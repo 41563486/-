@@ -11,6 +11,7 @@
 const version = require('element-ui/package.json').version // element-ui version from node_modules
 const ORIGINAL_THEME = '#409EFF' // default color
 
+//  用于选择主题颜色
 export default {
   data () {
     return {

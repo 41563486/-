@@ -1,6 +1,7 @@
 import axios from 'axios'
 import vue from 'vue'
 
+// 异步请求操作
 const request = function (loadtip, query) {
   let loading
   if (loadtip) {
@@ -41,6 +42,7 @@ const request = function (loadtip, query) {
 
 const post = function (url, params) {
   const query = {
+    // env环境变量中配置值
     baseURL: process.env.VUE_APP_URL,
     url: url,
     method: 'post',

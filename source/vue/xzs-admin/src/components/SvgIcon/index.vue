@@ -10,6 +10,7 @@
 import { isExternal } from '@/utils/validate'
 
 export default {
+  //  svg图标显示,包括判断是否为外来图标的样式大小的设定
   name: 'SvgIcon',
   props: {
     iconClass: {

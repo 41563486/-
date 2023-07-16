@@ -15,15 +15,15 @@
     </el-form>
 
     <el-table v-loading="listLoading" :data="tableData" border fit highlight-current-row style="width: 100%">
-      <el-table-column prop="id" label="Id" />
+      <el-table-column prop="id" label="Id"/>
       <el-table-column prop="name" label="学科"/>
-      <el-table-column prop="levelName" label="年级" />
+      <el-table-column prop="levelName" label="年级"/>
       <el-table-column width="220px" label="操作" align="center">
         <template slot-scope="{row}">
           <router-link :to="{path:'/education/subject/edit', query:{id:row.id}}" class="link-left">
             <el-button size="mini">编辑</el-button>
           </router-link>
-          <el-button   size="mini" type="danger" @click="delSubject(row)" class="link-left">删除</el-button>
+          <el-button size="mini" type="danger" @click="delSubject(row)" class="link-left">删除</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -69,6 +69,7 @@ export default {
       this.queryParam.pageIndex = 1
       this.search()
     },
+    /* this可以访问 */
     delSubject (row) {
       let _this = this
       subjectApi.deleteSubject(row.id).then(re => {
