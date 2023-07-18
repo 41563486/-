@@ -2,7 +2,7 @@ import store from '@/store'
 
 const { body } = document
 const WIDTH = 992 // refer to Bootstrap's responsive design
-
+// 实现了响应式地根据窗口大小切换设备模式并自动关闭侧边栏
 export default {
   watch: {
     $route (route) {

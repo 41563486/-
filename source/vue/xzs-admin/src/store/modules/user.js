@@ -17,10 +17,12 @@ const actions = {
 
 // mutations
 const mutations = {
+  // 设置用户的名称,expires三十天后自动删除
   setUserName (state, userName) {
     state.userName = userName
     Cookies.set('adminUserName', userName, { expires: 30 })
   },
+  // 设置用户的信息
   setUserInfo: (state, userInfo) => {
     state.userInfo = userInfo
     Cookies.set('adminUserInfo', userInfo, { expires: 30 })

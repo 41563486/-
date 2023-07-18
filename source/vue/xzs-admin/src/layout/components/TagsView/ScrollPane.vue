@@ -27,6 +27,7 @@ export default {
     },
     moveToTarget (currentTag) {
       const $container = this.$refs.scrollContainer.$el
+      // offsetWidth返回当前dom元素的像素宽度
       const $containerWidth = $container.offsetWidth
       const $scrollWrapper = this.scrollWrapper
       const tagList = this.$parent.$refs.tag
@@ -46,6 +47,7 @@ export default {
         $scrollWrapper.scrollLeft = $scrollWrapper.scrollWidth - $containerWidth
       } else {
         // find preTag and nextTag
+        // 返回一个与currentTag相等的tag
         const currentIndex = tagList.findIndex(item => item === currentTag)
         const prevTag = tagList[currentIndex - 1]
         const nextTag = tagList[currentIndex + 1]

@@ -30,6 +30,7 @@ import loginApi from '@/api/login'
 import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
 
+//  点击用户头像出来的bar选择框
 export default {
   components: {
     Breadcrumb,

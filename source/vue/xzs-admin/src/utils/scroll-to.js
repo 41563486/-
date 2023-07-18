@@ -31,6 +31,7 @@ function position () {
  * @param {number} duration
  * @param {Function} callback
  */
+// 滑动
 export function scrollTo (to, duration, callback) {
   const start = position()
   const change = to - start
@@ -41,6 +42,7 @@ export function scrollTo (to, duration, callback) {
     // increment the time
     currentTime += increment
     // find the value with the quadratic in-out easing function
+    // 计算当前时刻的滚动值
     var val = Math.easeInOutQuad(currentTime, start, change, duration)
     // move the document.body
     move(val)
