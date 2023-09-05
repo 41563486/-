@@ -6,12 +6,7 @@ import org.springframework.security.web.authentication.rememberme.TokenBasedReme
 import javax.servlet.http.HttpServletRequest;
 
 
-/**
- * @version 3.5.0
- * @description: 记住我，Cookie
- * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
- * @date 2021/12/25 9:45
- */
+
 public class RestTokenBasedRememberMeServices extends TokenBasedRememberMeServices {
     /**
      * Instantiates a new Rest token based remember me services.

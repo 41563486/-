@@ -22,12 +22,6 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 
 
-/**
- * @version 3.5.0
- * @description: 登录用户名密码验证
- * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
- * @date 2021/12/25 9:45
- */
 @Component
 public class RestAuthenticationProvider implements AuthenticationProvider {
 

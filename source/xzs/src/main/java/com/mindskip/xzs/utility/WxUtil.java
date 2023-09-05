@@ -11,12 +11,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
-/**
- * @version 3.5.0
- * @description: The type Wx util.
- * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
- * @date 2021/12/25 9:45
- */
+
 public class WxUtil {
     private static final Logger logger = LoggerFactory.getLogger(WxUtil.class);
     private static final String openIdUrl = "https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code";

@@ -12,11 +12,7 @@ import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 
 
-/**
- * @version 3.5.0
- * @description: The type Rsa util.
 
- */
 //RSA加密工具类
 public class RsaUtil {
     /**

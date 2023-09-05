@@ -1,11 +1,6 @@
 package com.mindskip.xzs.base;
 
-/**
- * @version 3.3.0
- * @description: The type Rest response.
- * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
- * @date 2021/5/25 10:45
- */
+
 //T为类型占位符
 public class RestResponse<T> {
     private int code;

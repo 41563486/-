@@ -4,12 +4,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-/**
- * @version 3.5.0
- * @description: The type Html util.
- * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
- * @date 2021/12/25 9:45
- */
 //html工具类
 public class HtmlUtil {
     /**

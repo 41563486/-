@@ -14,12 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.stream.Collectors;
 
-/**
- * @version 3.5.0
- * @description: The type Exception handle.
- * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
- * @date 2021/12/25 9:45
- */
+
 //全局控制增强
 @ControllerAdvice
 //异常处理

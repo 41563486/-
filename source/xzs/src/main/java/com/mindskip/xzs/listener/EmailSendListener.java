@@ -7,12 +7,7 @@ import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 
 
-/**
- * @version 3.5.0
- * @description: The type Email send listener.
 
- * @date
- */
 //消息目标
 @Component
 public class EmailSendListener implements ApplicationListener<OnRegistrationCompleteEvent> {

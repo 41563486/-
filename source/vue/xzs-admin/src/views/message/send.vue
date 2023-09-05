@@ -1,3 +1,4 @@
+<!--
 <template>
   <div class="app-container">
 
@@ -102,3 +103,4 @@ export default {
   }
 }
 </script>
+-->

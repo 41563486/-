@@ -11,12 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-/**
- * @version 3.5.0
- * @description: 没权限
- * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
- * @date 2021/12/25 9:45
- */
 @Component
 public class RestAccessDeniedHandler implements AccessDeniedHandler {
     @Override

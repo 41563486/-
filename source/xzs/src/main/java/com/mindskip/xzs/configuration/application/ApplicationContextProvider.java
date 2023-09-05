@@ -5,12 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
-/**
- * @version 3.5.0
- * @description: The type Application context provider.
- * Copyright (C),
- * @date
- */
+
 @Component
 public class ApplicationContextProvider implements ApplicationContextAware {
     private static ApplicationContext context;

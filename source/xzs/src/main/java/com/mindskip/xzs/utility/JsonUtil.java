@@ -12,12 +12,7 @@ import java.io.InputStream;
 import java.util.List;
 
 
-/**
- * @version 3.5.0
- * @description: The type Json util.
- * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
- * @date 2021/12/25 9:45
- */
+
 //json工具类
 public class JsonUtil {
     private static final ObjectMapper MAPPER = new ObjectMapper();
