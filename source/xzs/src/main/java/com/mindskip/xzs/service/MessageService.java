@@ -3,7 +3,7 @@ package com.mindskip.xzs.service;
 import com.mindskip.xzs.domain.Message;
 import com.mindskip.xzs.domain.MessageUser;
 import com.mindskip.xzs.viewmodel.admin.message.MessagePageRequestVM;
-import com.mindskip.xzs.viewmodel.student.user.MessageRequestVM;
+import com.mindskip.xzs.viewmodel.second.user.MessageRequestVM;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;

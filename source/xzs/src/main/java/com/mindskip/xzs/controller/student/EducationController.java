@@ -6,8 +6,8 @@ import com.mindskip.xzs.base.RestResponse;
 import com.mindskip.xzs.domain.Subject;
 import com.mindskip.xzs.domain.User;
 import com.mindskip.xzs.service.SubjectService;
-import com.mindskip.xzs.viewmodel.student.education.SubjectEditRequestVM;
-import com.mindskip.xzs.viewmodel.student.education.SubjectVM;
+import com.mindskip.xzs.viewmodel.second.education.SubjectEditRequestVM;
+import com.mindskip.xzs.viewmodel.second.education.SubjectVM;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

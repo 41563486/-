@@ -15,7 +15,7 @@ import com.mindskip.xzs.service.TaskExamService;
 import com.mindskip.xzs.service.TextContentService;
 import com.mindskip.xzs.utility.DateTimeUtil;
 import com.mindskip.xzs.utility.JsonUtil;
-import com.mindskip.xzs.viewmodel.student.dashboard.*;
+import com.mindskip.xzs.viewmodel.second.dashboard.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

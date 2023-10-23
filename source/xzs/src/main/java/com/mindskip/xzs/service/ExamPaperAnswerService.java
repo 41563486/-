@@ -3,8 +3,8 @@ package com.mindskip.xzs.service;
 import com.mindskip.xzs.domain.ExamPaperAnswer;
 import com.mindskip.xzs.domain.ExamPaperAnswerInfo;
 import com.mindskip.xzs.domain.User;
-import com.mindskip.xzs.viewmodel.student.exam.ExamPaperSubmitVM;
-import com.mindskip.xzs.viewmodel.student.exampaper.ExamPaperAnswerPageVM;
+import com.mindskip.xzs.viewmodel.second.exam.ExamPaperSubmitVM;
+import com.mindskip.xzs.viewmodel.second.exampaper.ExamPaperAnswerPageVM;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;

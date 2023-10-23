@@ -2,8 +2,8 @@ package com.mindskip.xzs.service;
 
 import com.mindskip.xzs.domain.ExamPaperQuestionCustomerAnswer;
 import com.mindskip.xzs.domain.other.ExamPaperAnswerUpdate;
-import com.mindskip.xzs.viewmodel.student.exam.ExamPaperSubmitItemVM;
-import com.mindskip.xzs.viewmodel.student.question.answer.QuestionPageStudentRequestVM;
+import com.mindskip.xzs.viewmodel.second.exam.ExamPaperSubmitItemVM;
+import com.mindskip.xzs.viewmodel.second.question.answer.QuestionPageStudentRequestVM;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;

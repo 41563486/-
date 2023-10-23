@@ -158,7 +158,7 @@
 
 
     <select id="studentPage" resultMap="BaseResultMap"
-            parameterType="com.mindskip.xzs.viewmodel.student.user.MessageRequestVM">
+            parameterType="com.mindskip.xzs.viewmodel.second.user.MessageRequestVM">
         select
         <include refid="Base_Column_List"/>
         from t_message_user

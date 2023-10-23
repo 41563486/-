@@ -3,12 +3,7 @@ package com.mindskip.xzs.event;
 import com.mindskip.xzs.domain.ExamPaperAnswerInfo;
 import org.springframework.context.ApplicationEvent;
 
-/**
- * @version 3.3.0
- * @description: The type Calculate exam paper answer complete event.
- * Copyright (C), 2020-2021, 武汉思维跳跃科技有限公司
- * @date 2021/5/25 10:45
- */
+
 //计算试卷答案完成事件
 public class CalculateExamPaperAnswerCompleteEvent extends ApplicationEvent {
 

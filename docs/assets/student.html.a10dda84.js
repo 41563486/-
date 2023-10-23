@@ -420,4 +420,4 @@ import{_ as e,o as i,c as n,e as u}from"./app.c955b7bd.js";const d={},s=u(`<h1 i
     &quot;message&quot;: &quot;成功&quot;,
     &quot;response&quot;: 0  //未读消息数量
 }
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,81),t=[s];function l(a,o){return i(),n("div",null,t)}const r=e(d,[["render",l],["__file","student.html.vue"]]);export{r as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,81),t=[s];function l(a,o){return i(),n("div",null,t)}const r=e(d,[["render",l],["__file","second.html.vue"]]);export{r as default};

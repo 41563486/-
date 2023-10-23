@@ -215,7 +215,7 @@
     </update>
 
 
-    <resultMap id="PaperInfoResultMap" type="com.mindskip.xzs.viewmodel.student.dashboard.PaperInfo">
+    <resultMap id="PaperInfoResultMap" type="com.mindskip.xzs.viewmodel.second.dashboard.PaperInfo">
         <id column="id" jdbcType="INTEGER" property="id"/>
         <result column="name" jdbcType="VARCHAR" property="name"/>
         <result column="limit_start_time" jdbcType="TIMESTAMP" property="limitStartTime"/>
@@ -260,7 +260,7 @@
     </select>
 
     <select id="studentPage" resultMap="BaseResultMap"
-            parameterType="com.mindskip.xzs.viewmodel.student.exam.ExamPaperPageVM">
+            parameterType="com.mindskip.xzs.viewmodel.second.exam.ExamPaperPageVM">
         SELECT
         <include refid="Base_Column_List"/>
         FROM t_exam_paper
@@ -278,7 +278,7 @@
 
 
     <select id="indexPaper" resultMap="PaperInfoResultMap"
-            parameterType="com.mindskip.xzs.viewmodel.student.dashboard.PaperFilter">
+            parameterType="com.mindskip.xzs.viewmodel.second.dashboard.PaperFilter">
         SELECT id,name,limit_start_time,limit_end_time
         FROM t_exam_paper
         <where>

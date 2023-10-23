@@ -215,7 +215,7 @@
 
 
     <select id="studentPage" resultMap="BaseResultMap"
-            parameterType="com.mindskip.xzs.viewmodel.student.exampaper.ExamPaperAnswerPageVM">
+            parameterType="com.mindskip.xzs.viewmodel.second.exampaper.ExamPaperAnswerPageVM">
         SELECT
         <include refid="Base_Column_List"/>
         FROM t_exam_paper_answer

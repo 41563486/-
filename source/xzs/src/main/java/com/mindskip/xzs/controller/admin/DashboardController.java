@@ -44,14 +44,14 @@ public class DashboardController extends BaseApiController {
         Integer questionCount = questionService.selectAllCount();
         Integer doExamPaperCount = examPaperAnswerService.selectAllCount();
         Integer doQuestionCount = examPaperQuestionCustomerAnswerService.selectAllCount();
-
+//mothDayDoExamQuestionValue
         vm.setExamPaperCount(examPaperCount);
         vm.setQuestionCount(questionCount);
         vm.setDoExamPaperCount(doExamPaperCount);
         vm.setDoQuestionCount(doQuestionCount);
 
         List<Integer> mothDayUserActionValue = userEventLogService.selectMothCount();
-        List<Integer> mothDayDoExamQuestionValue = examPaperQuestionCustomerAnswerService.selectMothCount();
+        List<Integer> mothDayDoExamQuestionValue = questionService.selectMothCount();
         vm.setMothDayUserActionValue(mothDayUserActionValue);
         vm.setMothDayDoExamQuestionValue(mothDayDoExamQuestionValue);
 

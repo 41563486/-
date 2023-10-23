@@ -1,0 +1,125 @@
+2023-09-14 08:14:02.830  INFO 17604 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on 华硕无畏pro14 with PID 17604 (started by 彼方 in C:\Users\彼方\Desktop\毕业设计\毕业设计项目\zxks-mysql)
+2023-09-14 08:14:02.831  INFO 17604 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2023-09-14 08:14:02.884  INFO 17604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-14 08:14:02.885  INFO 17604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-14 08:14:03.827  WARN 17604 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-09-14 08:14:03.845  INFO 17604 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-09-14 08:14:03.845  INFO 17604 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 960 ms
+2023-09-14 08:14:04.365  INFO 17604 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-14 08:14:04.618  INFO 17604 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 922a3f7a-fb40-440b-9217-945da270888f
+
+2023-09-14 08:14:04.687  INFO 17604 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58d071b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5acc92ad, org.springframework.security.web.header.HeaderWriterFilter@34330c49, org.springframework.security.web.csrf.CsrfFilter@78ba30e2, org.springframework.security.web.authentication.logout.LogoutFilter@8e4faa5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b764a39, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@29495184, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2d1ecf1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2f85e2a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60390d00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fe56641, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74822f7, org.springframework.security.web.session.SessionManagementFilter@2204c001, org.springframework.security.web.access.ExceptionTranslationFilter@20552547, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ef5a5bd]
+2023-09-14 08:14:04.828  INFO 17604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-14 08:14:04.870  INFO 17604 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2023-09-14 08:14:04.878  INFO 17604 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2023-09-14 08:14:04.928  INFO 17604 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2023-09-14 08:14:04.931  INFO 17604 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 2.538 seconds (JVM running for 3.315)
+2023-09-14 08:15:05.293  INFO 17604 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-14 08:15:05.298  INFO 17604 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-14 08:15:05.324  INFO 17604 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2023-09-14 08:15:43.189  INFO 17604 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-14 08:15:43.196  INFO 17604 --- [Thread-12] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-14 08:15:46.588  INFO 7276 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on 华硕无畏pro14 with PID 7276 (started by 彼方 in C:\Users\彼方\Desktop\毕业设计\毕业设计项目\zxks-mysql)
+2023-09-14 08:15:46.591  INFO 7276 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2023-09-14 08:15:46.638  INFO 7276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-14 08:15:46.639  INFO 7276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-14 08:15:47.496  WARN 7276 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-09-14 08:15:47.510  INFO 7276 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-09-14 08:15:47.511  INFO 7276 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 872 ms
+2023-09-14 08:15:48.200  INFO 7276 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@204443d3, org.springframework.security.web.context.SecurityContextPersistenceFilter@56b8be30, org.springframework.security.web.header.HeaderWriterFilter@2371f2c8, org.springframework.web.filter.CorsFilter@45bc56e8, org.springframework.security.web.authentication.logout.LogoutFilter@30fe80a7, com.mindskip.xzs.configuration.spring.st.RestLoginAuthenticationFilter@4f37e96e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2bb8f56b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b57390f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c749c89, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5658b48e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4aa104b5, org.springframework.security.web.session.SessionManagementFilter@1b7a4093, org.springframework.security.web.access.ExceptionTranslationFilter@72a4573e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ee00075]
+2023-09-14 08:15:48.461  INFO 7276 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-14 08:15:48.500  INFO 7276 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2023-09-14 08:15:48.507  INFO 7276 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2023-09-14 08:15:48.551  INFO 7276 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2023-09-14 08:15:48.554  INFO 7276 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 2.288 seconds (JVM running for 3.025)
+2023-09-14 08:16:44.507  INFO 7276 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-14 08:16:44.512  INFO 7276 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-14 08:16:44.540  INFO 7276 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2023-09-14 08:16:46.033  INFO 7276 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-14 08:16:46.195  INFO 7276 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-14 08:16:46.203 DEBUG 7276 --- [XNIO-1 task-2] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id , user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-09-14 08:16:46.226 DEBUG 7276 --- [XNIO-1 task-2] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-09-14 08:16:46.272 DEBUG 7276 --- [XNIO-1 task-2] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-09-14 08:16:46.323 DEBUG 7276 --- [XNIO-1 task-2] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id , user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-09-14 08:16:46.324 DEBUG 7276 --- [XNIO-1 task-2] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-09-14 08:16:46.325 DEBUG 7276 --- [XNIO-1 task-2] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-09-14 08:16:46.344 DEBUG 7276 --- [XNIO-1 task-2] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2023-09-14 08:16:46.346 DEBUG 7276 --- [XNIO-1 task-2] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2023-09-14 08:16:46.325(Timestamp)
+2023-09-14 08:16:46.355 DEBUG 7276 --- [XNIO-1 task-2] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
+2023-09-14 08:16:46.449 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted = 0 
+2023-09-14 08:16:46.449 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2023-09-14 08:16:46.458 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2023-09-14 08:16:46.459 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted = 0 
+2023-09-14 08:16:46.459 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2023-09-14 08:16:46.462 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2023-09-14 08:16:46.465 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2023-09-14 08:16:46.465 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2023-09-14 08:16:46.471 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2023-09-14 08:16:46.473 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2023-09-14 08:16:46.473 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2023-09-14 08:16:46.477 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2023-09-14 08:16:46.482 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name, COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time, '%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2023-09-14 08:16:46.482 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.U.selectCountByDate            : ==> Parameters: 2023-09-01 00:00:00.0(Timestamp), 2023-09-30 23:59:59.0(Timestamp)
+2023-09-14 08:16:46.491 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.U.selectCountByDate            : <==      Total: 5
+2023-09-14 08:16:46.495 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name, COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time, '%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2023-09-14 08:16:46.495 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.E.selectCountByDate            : ==> Parameters: 2023-09-01 00:00:00.0(Timestamp), 2023-09-30 23:59:59.0(Timestamp)
+2023-09-14 08:16:46.498 DEBUG 7276 --- [XNIO-1 task-3] r.c.m.x.r.E.selectCountByDate            : <==      Total: 0
+2023-09-14 08:16:48.239 DEBUG 7276 --- [XNIO-1 task-4] r.c.m.x.r.UserMapper.userPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2023-09-14 08:16:48.239 DEBUG 7276 --- [XNIO-1 task-4] r.c.m.x.r.UserMapper.userPage_COUNT      : ==> Parameters: 3(Integer)
+2023-09-14 08:16:48.241 DEBUG 7276 --- [XNIO-1 task-4] r.c.m.x.r.UserMapper.userPage_COUNT      : <==      Total: 1
+2023-09-14 08:16:48.245 DEBUG 7276 --- [XNIO-1 task-4] r.c.m.x.repository.UserMapper.userPage   : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2023-09-14 08:16:48.245 DEBUG 7276 --- [XNIO-1 task-4] r.c.m.x.repository.UserMapper.userPage   : ==> Parameters: 3(Integer), 10(Integer)
+2023-09-14 08:16:48.246 DEBUG 7276 --- [XNIO-1 task-4] r.c.m.x.repository.UserMapper.userPage   : <==      Total: 1
+2023-09-14 08:16:49.585 DEBUG 7276 --- [XNIO-1 task-5] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id , name, level, level_name, item_order, deleted from t_subject 
+2023-09-14 08:16:49.585 DEBUG 7276 --- [XNIO-1 task-5] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-09-14 08:16:49.588 DEBUG 7276 --- [XNIO-1 task-6] r.c.m.x.r.ExamPaperMapper.page_COUNT     : ==>  Preparing: SELECT count(0) FROM t_exam_paper WHERE deleted = 0 
+2023-09-14 08:16:49.588 DEBUG 7276 --- [XNIO-1 task-6] r.c.m.x.r.ExamPaperMapper.page_COUNT     : ==> Parameters: 
+2023-09-14 08:16:49.590 DEBUG 7276 --- [XNIO-1 task-6] r.c.m.x.r.ExamPaperMapper.page_COUNT     : <==      Total: 1
+2023-09-14 08:16:49.590 DEBUG 7276 --- [XNIO-1 task-5] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 3
+2023-09-14 08:16:49.591 DEBUG 7276 --- [XNIO-1 task-6] r.c.m.x.repository.ExamPaperMapper.page  : ==>  Preparing: SELECT id, name, subject_id, paper_type, grade_level, score, question_count, suggest_time, limit_start_time, limit_end_time, frame_text_content_id, create_user, create_time, deleted, task_exam_id FROM t_exam_paper WHERE deleted = 0 order by id desc LIMIT ? 
+2023-09-14 08:16:49.591 DEBUG 7276 --- [XNIO-1 task-6] r.c.m.x.repository.ExamPaperMapper.page  : ==> Parameters: 10(Integer)
+2023-09-14 08:16:49.593 DEBUG 7276 --- [XNIO-1 task-6] r.c.m.x.repository.ExamPaperMapper.page  : <==      Total: 3
+2023-09-14 08:16:49.685 DEBUG 7276 --- [XNIO-1 task-7] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id , name, level, level_name, item_order, deleted from t_subject 
+2023-09-14 08:16:49.686 DEBUG 7276 --- [XNIO-1 task-7] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-09-14 08:16:49.687 DEBUG 7276 --- [XNIO-1 task-7] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 3
+2023-09-14 08:16:49.692 DEBUG 7276 --- [XNIO-1 task-8] r.c.m.x.r.QuestionMapper.page_COUNT      : ==>  Preparing: SELECT count(0) FROM t_question WHERE deleted = 0 
+2023-09-14 08:16:49.693 DEBUG 7276 --- [XNIO-1 task-8] r.c.m.x.r.QuestionMapper.page_COUNT      : ==> Parameters: 
+2023-09-14 08:16:49.693 DEBUG 7276 --- [XNIO-1 task-8] r.c.m.x.r.QuestionMapper.page_COUNT      : <==      Total: 1
+2023-09-14 08:16:49.695 DEBUG 7276 --- [XNIO-1 task-8] r.c.m.x.repository.QuestionMapper.page   : ==>  Preparing: SELECT id, question_type, subject_id, score, grade_level, difficult, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ? 
+2023-09-14 08:16:49.695 DEBUG 7276 --- [XNIO-1 task-8] r.c.m.x.repository.QuestionMapper.page   : ==> Parameters: 10(Integer)
+2023-09-14 08:16:49.698 DEBUG 7276 --- [XNIO-1 task-8] r.c.m.x.repository.QuestionMapper.page   : <==      Total: 1
+2023-09-14 08:16:49.702 DEBUG 7276 --- [XNIO-1 task-8] r.c.m.x.r.T.selectByPrimaryKey           : ==>  Preparing: select id , content, create_time from t_text_content where id = ? 
+2023-09-14 08:16:49.702 DEBUG 7276 --- [XNIO-1 task-8] r.c.m.x.r.T.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-09-14 08:16:49.707 DEBUG 7276 --- [XNIO-1 task-8] r.c.m.x.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-09-14 08:16:51.235 DEBUG 7276 --- [XNIO-1 task-9] r.c.m.x.r.TaskExamMapper.page_COUNT      : ==>  Preparing: SELECT count(0) FROM t_task_exam WHERE deleted = 0 
+2023-09-14 08:16:51.235 DEBUG 7276 --- [XNIO-1 task-9] r.c.m.x.r.TaskExamMapper.page_COUNT      : ==> Parameters: 
+2023-09-14 08:16:51.248 DEBUG 7276 --- [XNIO-1 task-9] r.c.m.x.r.TaskExamMapper.page_COUNT      : <==      Total: 1
+2023-09-14 08:16:51.351 DEBUG 7276 --- [XNIO-1 task-10] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id , name, level, level_name, item_order, deleted from t_subject 
+2023-09-14 08:16:51.351 DEBUG 7276 --- [XNIO-1 task-10] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-09-14 08:16:51.354 DEBUG 7276 --- [XNIO-1 task-10] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 3
+2023-09-14 08:16:52.984 DEBUG 7276 --- [XNIO-1 task-11] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2023-09-14 08:16:52.984 DEBUG 7276 --- [XNIO-1 task-11] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2023-09-14 08:16:52.984 DEBUG 7276 --- [XNIO-1 task-11] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2023-09-14 08:16:52.986 DEBUG 7276 --- [XNIO-1 task-11] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2023-09-14 08:16:52.986 DEBUG 7276 --- [XNIO-1 task-11] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2023-09-14 08:16:52.987 DEBUG 7276 --- [XNIO-1 task-11] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 3
+2023-09-14 08:16:54.358 DEBUG 7276 --- [XNIO-1 task-12] r.c.m.x.r.SubjectMapper.allSubject       : ==>  Preparing: select id , name, level, level_name, item_order, deleted from t_subject 
+2023-09-14 08:16:54.358 DEBUG 7276 --- [XNIO-1 task-12] r.c.m.x.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-09-14 08:16:54.359 DEBUG 7276 --- [XNIO-1 task-12] r.c.m.x.r.SubjectMapper.allSubject       : <==      Total: 3
+2023-09-14 08:16:54.359 DEBUG 7276 --- [XNIO-1 task-13] r.c.m.x.r.E.adminPage_COUNT              : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer 
+2023-09-14 08:16:54.361 DEBUG 7276 --- [XNIO-1 task-13] r.c.m.x.r.E.adminPage_COUNT              : ==> Parameters: 
+2023-09-14 08:16:54.362 DEBUG 7276 --- [XNIO-1 task-13] r.c.m.x.r.E.adminPage_COUNT              : <==      Total: 1
+2023-09-14 08:16:54.362 DEBUG 7276 --- [XNIO-1 task-13] r.c.m.x.r.E.adminPage                    : ==>  Preparing: SELECT id, exam_paper_id, paper_name, paper_type, subject_id, system_score, user_score, paper_score, question_correct, question_count, do_time, status, create_user, create_time, task_exam_id FROM t_exam_paper_answer order by id desc LIMIT ? 
+2023-09-14 08:16:54.363 DEBUG 7276 --- [XNIO-1 task-13] r.c.m.x.r.E.adminPage                    : ==> Parameters: 10(Integer)
+2023-09-14 08:16:54.364 DEBUG 7276 --- [XNIO-1 task-13] r.c.m.x.r.E.adminPage                    : <==      Total: 1
+2023-09-14 08:16:54.367 DEBUG 7276 --- [XNIO-1 task-13] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id , name, level, level_name, item_order, deleted from t_subject where id = ? 
+2023-09-14 08:16:54.367 DEBUG 7276 --- [XNIO-1 task-13] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-09-14 08:16:54.369 DEBUG 7276 --- [XNIO-1 task-13] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2023-09-14 08:16:54.370 DEBUG 7276 --- [XNIO-1 task-13] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==>  Preparing: select id , user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where id = ? 
+2023-09-14 08:16:54.370 DEBUG 7276 --- [XNIO-1 task-13] r.c.m.x.r.UserMapper.selectByPrimaryKey  : ==> Parameters: 1(Integer)
+2023-09-14 08:16:54.371 DEBUG 7276 --- [XNIO-1 task-13] r.c.m.x.r.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2023-09-14 08:16:59.980  INFO 7276 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-14 08:16:59.988  INFO 7276 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-14 08:16:59.991  INFO 7276 --- [Thread-11] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'

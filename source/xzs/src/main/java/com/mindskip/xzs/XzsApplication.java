@@ -11,11 +11,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableConfigurationProperties(value = { SystemConfig.class})
 public class XzsApplication {
 
-    /**
-     * The entry point of application.
-     *
-     * @param args the input arguments
-     */
     public static void main(String[] args) {
         SpringApplication.run(XzsApplication.class, args);
     }

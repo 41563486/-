@@ -12,7 +12,7 @@ import com.mindskip.xzs.domain.task.TaskItemObject;
 import com.mindskip.xzs.service.*;
 import com.mindskip.xzs.utility.DateTimeUtil;
 import com.mindskip.xzs.utility.JsonUtil;
-import com.mindskip.xzs.viewmodel.student.dashboard.*;
+import com.mindskip.xzs.viewmodel.second.dashboard.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

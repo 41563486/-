@@ -9,7 +9,7 @@ import com.mindskip.xzs.service.*;
 import com.mindskip.xzs.utility.DateTimeUtil;
 import com.mindskip.xzs.utility.ExamUtil;
 import com.mindskip.xzs.utility.PageInfoHelper;
-import com.mindskip.xzs.viewmodel.student.exampaper.ExamPaperAnswerPageResponseVM;
+import com.mindskip.xzs.viewmodel.second.exampaper.ExamPaperAnswerPageResponseVM;
 import com.mindskip.xzs.viewmodel.admin.paper.ExamPaperAnswerPageRequestVM;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;

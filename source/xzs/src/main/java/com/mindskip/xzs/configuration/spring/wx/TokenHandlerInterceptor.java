@@ -1,7 +1,7 @@
 package com.mindskip.xzs.configuration.spring.wx;
 
 import com.mindskip.xzs.base.SystemCode;
-import com.mindskip.xzs.configuration.spring.security.RestUtil;
+import com.mindskip.xzs.configuration.spring.st.RestUtil;
 import com.mindskip.xzs.context.WxContext;
 import com.mindskip.xzs.domain.User;
 import com.mindskip.xzs.domain.UserToken;

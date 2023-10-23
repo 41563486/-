@@ -3,7 +3,7 @@ package com.mindskip.xzs.repository;
 import com.mindskip.xzs.domain.ExamPaperQuestionCustomerAnswer;
 import com.mindskip.xzs.domain.other.ExamPaperAnswerUpdate;
 import com.mindskip.xzs.domain.other.KeyValue;
-import com.mindskip.xzs.viewmodel.student.question.answer.QuestionPageStudentRequestVM;
+import com.mindskip.xzs.viewmodel.second.question.answer.QuestionPageStudentRequestVM;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
