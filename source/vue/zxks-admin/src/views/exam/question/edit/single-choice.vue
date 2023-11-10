@@ -27,9 +27,9 @@
       <el-form-item label="分数：" prop="score" required>
         <el-input-number v-model="form.score" :precision="1" :step="1" :max="100" :min="1"></el-input-number>
       </el-form-item>
-<!--      <el-form-item label="难度：" required>
+      <el-form-item label="难度：" required>
         <el-rate v-model="form.difficult" class="question-item-rate"></el-rate>
-      </el-form-item>-->
+      </el-form-item>
       <el-form-item label="正确答案：" prop="correct" required>
         <el-radio-group v-model="form.correct">
           <el-radio  v-for="item in form.items"  :key="item.prefix"  :label="item.prefix">{{item.prefix}}</el-radio>

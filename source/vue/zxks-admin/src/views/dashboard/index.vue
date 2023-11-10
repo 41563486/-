@@ -89,9 +89,7 @@ export default {
     }
   },
   mounted() {
-    // eslint-disable-next-line no-undef
     this.echartsUserAction = echarts.init(document.getElementById('echarts-moth-user'), 'macarons')
-    // eslint-disable-next-line no-undef
     this.echartsQuestion = echarts.init(document.getElementById('echarts-moth-question'), 'macarons')
     let _this = this
     this.loading = true
@@ -120,7 +118,7 @@ export default {
         toolbox: {
           show: true,
           feature: {
-            magicType:{show: true,type: ['line', 'bar']}
+            magicType: {show: true, type: ['line', 'bar']}
           }
         },
         xAxis: {

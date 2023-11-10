@@ -268,11 +268,11 @@ export default {
 </script>
 
 <style lang="scss">
-  .exampaper-item-box {
-    .q-title {
-      margin: 0px 5px 0px 5px;
-    }
-    .q-item-content {
-    }
+.exampaper-item-box {
+  .q-title {
+    margin: 0px 5px 0px 5px;
   }
+  .q-item-content {
+  }
+}
 </style>

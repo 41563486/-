@@ -25,7 +25,7 @@
         <el-input v-model="form.analyze"   />
       </el-form-item>
       <el-form-item label="分数：" prop="score" required>
-        <el-input-number v-model="form.score" :precision="1" :step="1" :max="100"></el-input-number>
+        <el-input-number v-model="form.score" :precision="1" :step="1" :max="100" :min="1"></el-input-number>
       </el-form-item>
       <el-form-item label="难度：" required>
         <el-rate v-model="form.difficult" class="question-item-rate"></el-rate>

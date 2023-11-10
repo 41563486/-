@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/source/xzs/xzs.iml" filepath="$PROJECT_DIR$/source/xzs/xzs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/xzs-mysql.iml" filepath="$PROJECT_DIR$/.idea/xzs-mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/source/xzs/zxks.iml" filepath="$PROJECT_DIR$/source/xzs/zxks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/zxks-mysql.iml" filepath="$PROJECT_DIR$/.idea/zxks-mysql.iml" />
     </modules>
   </component>
 </project>

@@ -4,9 +4,24 @@
       <el-form-item label="题目ID：">
         <el-input v-model="queryParam.id" clearable></el-input>
       </el-form-item>
+      <el-form-item label="题目内容：">
+        <el-input v-model="queryParam.content" clearable></el-input>
+      </el-form-item>
+
       <el-form-item label="年级：">
         <el-select v-model="queryParam.level" placeholder="年级"  @change="levelChange" clearable>
           <el-option v-for="item in levelEnum" :key="item.key" :value="item.key" :label="item.value"></el-option>
+        </el-select>
+      </el-form-item>
+      <el-form-item label="学科：">
+        <el-select v-model="queryParam.subjectId" clearable>
+          <el-option v-for="item in subjectFilter" :key="item.id" :value="item.id"
+                     :label="item.name+' ( '+item.levelName+' )'"></el-option>
+        </el-select>
+      </el-form-item>
+      <el-form-item label="题型：">
+        <el-select v-model="queryParam.questionType" clearable>
+          <el-option v-for="item in questionType" :key="item.key" :value="item.key" :label="item.value"></el-option>
         </el-select>
       </el-form-item>
       <el-form-item>
@@ -29,6 +44,7 @@
       <el-table-column prop="createTime" label="创建时间" width="160px"/>
       <el-table-column label="操作" align="center" width="220px">
         <template slot-scope="{row}">
+          <el-button size="mini"   @click="showQuestion(row)">预览</el-button>
           <el-button size="mini"  @click="editQuestion(row)">编辑</el-button>
           <el-button size="mini"  type="danger" @click="deleteQuestion(row)" class="link-left">删除</el-button>
         </template>
