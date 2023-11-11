@@ -63,7 +63,7 @@ public class ExamPaperAnswerServiceImpl extends BaseServiceImpl<ExamPaperAnswer>
     }
 
 
-    //计算
+    //计算试卷
     @Override
     public ExamPaperAnswerInfo calculateExamPaperAnswer(ExamPaperSubmitVM examPaperSubmitVM, User user) {
         ExamPaperAnswerInfo examPaperAnswerInfo = new ExamPaperAnswerInfo();
@@ -100,6 +100,7 @@ public class ExamPaperAnswerServiceImpl extends BaseServiceImpl<ExamPaperAnswer>
         return examPaperAnswerInfo;
     }
 
+    //自动评分
     @Override
     @Transactional
     public String judge(ExamPaperSubmitVM examPaperSubmitVM) {
@@ -148,6 +149,7 @@ public class ExamPaperAnswerServiceImpl extends BaseServiceImpl<ExamPaperAnswer>
         return ExamUtil.scoreToVM(customerScore);
     }
 
+    //用于将试卷答案对象转化为视图模型对象，以便展示给用户或前端。
     @Override
     public ExamPaperSubmitVM examPaperAnswerToVM(Integer id) {
         ExamPaperSubmitVM examPaperSubmitVM = new ExamPaperSubmitVM();
@@ -233,7 +235,7 @@ public class ExamPaperAnswerServiceImpl extends BaseServiceImpl<ExamPaperAnswer>
                 break;
         }
     }
-
+    //用于根据学生的答卷情况和试卷信息创建试卷答案对象
     private ExamPaperAnswer ExamPaperAnswerFromVM(ExamPaperSubmitVM examPaperSubmitVM, ExamPaper examPaper, List<ExamPaperQuestionCustomerAnswer> examPaperQuestionCustomerAnswers, User user, Date now) {
         Integer systemScore = examPaperQuestionCustomerAnswers.stream().mapToInt(a -> a.getCustomerScore()).sum();
         long questionCorrect = examPaperQuestionCustomerAnswers.stream().filter(a -> a.getCustomerScore().equals(a.getQuestionScore())).count();
