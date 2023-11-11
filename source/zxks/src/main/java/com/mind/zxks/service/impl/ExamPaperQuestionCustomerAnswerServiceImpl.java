@@ -54,6 +54,7 @@ public class ExamPaperQuestionCustomerAnswerServiceImpl extends BaseServiceImpl<
         examPaperQuestionCustomerAnswerMapper.insertList(examPaperQuestionCustomerAnswers);
     }
 
+    //将用户试卷答案转换为视图数据
     @Override
     public ExamPaperSubmitItemVM examPaperQuestionCustomerAnswerToVM(ExamPaperQuestionCustomerAnswer qa) {
         ExamPaperSubmitItemVM examPaperSubmitItemVM = new ExamPaperSubmitItemVM();
@@ -88,7 +89,8 @@ public class ExamPaperQuestionCustomerAnswerServiceImpl extends BaseServiceImpl<
     public int updateScore(List<ExamPaperAnswerUpdate> examPaperAnswerUpdates) {
         return examPaperQuestionCustomerAnswerMapper.updateScore(examPaperAnswerUpdates);
     }
-
+//这样，根据题目类型的不同，setSpecialToVM 方法能够适应性地处理特殊情况，确保将正确的信息设置到 ExamPaperSubmitItemVM 对象中
+    //将答案转换为文本内容
     private void setSpecialToVM(ExamPaperSubmitItemVM examPaperSubmitItemVM, ExamPaperQuestionCustomerAnswer examPaperQuestionCustomerAnswer) {
         QuestionTypeEnum questionTypeEnum = QuestionTypeEnum.fromCode(examPaperQuestionCustomerAnswer.getQuestionType());
         switch (questionTypeEnum) {

@@ -1,0 +1,126 @@
+2023-11-11 11:41:56.402  INFO 1696 --- [restartedMain] com.mind.zxks.ZxksApplication            : Starting ZxksApplication on 华硕无畏pro14 with PID 1696 (started by 彼方 in C:\Users\彼方\Desktop\毕业设计\毕业设计项目\zxks-mysql)
+2023-11-11 11:41:56.406  INFO 1696 --- [restartedMain] com.mind.zxks.ZxksApplication            : The following profiles are active: dev
+2023-11-11 11:41:56.455  INFO 1696 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-11 11:41:56.457  INFO 1696 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-11 11:41:57.927  WARN 1696 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-11-11 11:41:57.952  INFO 1696 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-11-11 11:41:57.952  INFO 1696 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1495 ms
+2023-11-11 11:41:58.904  INFO 1696 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d227ed8, org.springframework.security.web.context.SecurityContextPersistenceFilter@cf69ac6, org.springframework.security.web.header.HeaderWriterFilter@29554a26, org.springframework.web.filter.CorsFilter@5e230092, org.springframework.security.web.authentication.logout.LogoutFilter@306978d8, com.mind.zxks.configuration.spring.st.RestLoginAuthenticationFilter@c3abaa6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@16dad9a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@645dbc0e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cd50b45, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6766e5f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5464035b, org.springframework.security.web.session.SessionManagementFilter@43a8da7, org.springframework.security.web.access.ExceptionTranslationFilter@7e50d745, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a8c7fec]
+2023-11-11 11:41:59.428  INFO 1696 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-11 11:41:59.483  INFO 1696 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2023-11-11 11:41:59.496  INFO 1696 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2023-11-11 11:41:59.574  INFO 1696 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2023-11-11 11:41:59.580  INFO 1696 --- [restartedMain] com.mind.zxks.ZxksApplication            : Started ZxksApplication in 3.834 seconds (JVM running for 5.012)
+2023-11-11 11:42:03.144  INFO 1696 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-11 11:42:03.145  INFO 1696 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-11 11:42:03.162  INFO 1696 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2023-11-11 11:42:45.991  INFO 1696 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-11 11:42:46.311  INFO 1696 --- [XNIO-1 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-11 11:42:46.320 DEBUG 1696 --- [XNIO-1 task-2] r.c.m.z.r.UserMapper.getUserByUserName   : ==>  Preparing: select id , user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-11-11 11:42:46.354 DEBUG 1696 --- [XNIO-1 task-2] r.c.m.z.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-11-11 11:42:46.408 DEBUG 1696 --- [XNIO-1 task-2] r.c.m.z.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-11-11 11:42:46.485 DEBUG 1696 --- [XNIO-1 task-2] r.c.m.z.r.UserMapper.getUserByUserName   : ==>  Preparing: select id , user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2023-11-11 11:42:46.485 DEBUG 1696 --- [XNIO-1 task-2] r.c.m.z.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2023-11-11 11:42:46.487 DEBUG 1696 --- [XNIO-1 task-2] r.c.m.z.r.UserMapper.getUserByUserName   : <==      Total: 1
+2023-11-11 11:42:46.514 DEBUG 1696 --- [XNIO-1 task-2] r.c.m.z.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2023-11-11 11:42:46.517 DEBUG 1696 --- [XNIO-1 task-2] r.c.m.z.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了在线考试管理系统(String), 2023-11-11 11:42:46.487(Timestamp)
+2023-11-11 11:42:46.528 DEBUG 1696 --- [XNIO-1 task-2] r.c.m.z.r.U.insertSelective              : <==    Updates: 1
+2023-11-11 11:42:46.693 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted = 0 
+2023-11-11 11:42:46.693 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.E.selectAllCount               : ==> Parameters: 
+2023-11-11 11:42:46.704 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.E.selectAllCount               : <==      Total: 1
+2023-11-11 11:42:46.706 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted = 0 
+2023-11-11 11:42:46.707 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2023-11-11 11:42:46.714 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2023-11-11 11:42:46.717 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2023-11-11 11:42:46.717 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.E.selectAllCount               : ==> Parameters: 
+2023-11-11 11:42:46.724 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.E.selectAllCount               : <==      Total: 1
+2023-11-11 11:42:46.726 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2023-11-11 11:42:46.727 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.E.selectAllCount               : ==> Parameters: 
+2023-11-11 11:42:46.736 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.E.selectAllCount               : <==      Total: 1
+2023-11-11 11:42:46.744 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name, COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time, '%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2023-11-11 11:42:46.746 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.U.selectCountByDate            : ==> Parameters: 2023-11-01 00:00:00.0(Timestamp), 2023-11-30 23:59:59.0(Timestamp)
+2023-11-11 11:42:46.755 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.U.selectCountByDate            : <==      Total: 4
+2023-11-11 11:42:46.762 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.Q.selectCountByDate            : ==>  Preparing: SELECT create_time as name, COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time, '%Y-%m-%d') as create_time from t_question WHERE deleted=0 and create_time between ? and ? ) a GROUP BY create_time 
+2023-11-11 11:42:46.764 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.Q.selectCountByDate            : ==> Parameters: 2023-11-01 00:00:00.0(Timestamp), 2023-11-30 23:59:59.0(Timestamp)
+2023-11-11 11:42:46.766 DEBUG 1696 --- [XNIO-1 task-3] r.c.m.z.r.Q.selectCountByDate            : <==      Total: 2
+2023-11-11 11:42:52.234 DEBUG 1696 --- [XNIO-1 task-4] r.c.m.z.r.SubjectMapper.allSubject       : ==>  Preparing: select id , name, level, level_name, item_order, deleted from t_subject 
+2023-11-11 11:42:52.234 DEBUG 1696 --- [XNIO-1 task-4] r.c.m.z.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-11-11 11:42:52.239 DEBUG 1696 --- [XNIO-1 task-4] r.c.m.z.r.SubjectMapper.allSubject       : <==      Total: 4
+2023-11-11 11:42:52.302 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.QuestionMapper.page_COUNT      : ==>  Preparing: SELECT count(0) FROM t_question WHERE deleted = 0 
+2023-11-11 11:42:52.302 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.QuestionMapper.page_COUNT      : ==> Parameters: 
+2023-11-11 11:42:52.304 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.QuestionMapper.page_COUNT      : <==      Total: 1
+2023-11-11 11:42:52.308 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.repository.QuestionMapper.page   : ==>  Preparing: SELECT id, question_type, subject_id, score, grade_level, difficult, correct, info_text_content_id, create_user, status, create_time, deleted FROM t_question WHERE deleted = 0 order by id desc LIMIT ? 
+2023-11-11 11:42:52.309 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.repository.QuestionMapper.page   : ==> Parameters: 10(Integer)
+2023-11-11 11:42:52.321 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.repository.QuestionMapper.page   : <==      Total: 7
+2023-11-11 11:42:52.356 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==>  Preparing: select id , content, create_time from t_text_content where id = ? 
+2023-11-11 11:42:52.356 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==> Parameters: 20(Integer)
+2023-11-11 11:42:52.362 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-11-11 11:42:52.374 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==>  Preparing: select id , content, create_time from t_text_content where id = ? 
+2023-11-11 11:42:52.375 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==> Parameters: 17(Integer)
+2023-11-11 11:42:52.377 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-11-11 11:42:52.379 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==>  Preparing: select id , content, create_time from t_text_content where id = ? 
+2023-11-11 11:42:52.379 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==> Parameters: 5(Integer)
+2023-11-11 11:42:52.379 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-11-11 11:42:52.380 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==>  Preparing: select id , content, create_time from t_text_content where id = ? 
+2023-11-11 11:42:52.381 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==> Parameters: 4(Integer)
+2023-11-11 11:42:52.383 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-11-11 11:42:52.384 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==>  Preparing: select id , content, create_time from t_text_content where id = ? 
+2023-11-11 11:42:52.384 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==> Parameters: 3(Integer)
+2023-11-11 11:42:52.386 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-11-11 11:42:52.388 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==>  Preparing: select id , content, create_time from t_text_content where id = ? 
+2023-11-11 11:42:52.389 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==> Parameters: 2(Integer)
+2023-11-11 11:42:52.390 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-11-11 11:42:52.391 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==>  Preparing: select id , content, create_time from t_text_content where id = ? 
+2023-11-11 11:42:52.392 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : ==> Parameters: 1(Integer)
+2023-11-11 11:42:52.392 DEBUG 1696 --- [XNIO-1 task-5] r.c.m.z.r.T.selectByPrimaryKey           : <==      Total: 1
+2023-11-11 11:42:53.629 DEBUG 1696 --- [XNIO-1 task-6] r.c.m.z.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2023-11-11 11:42:53.629 DEBUG 1696 --- [XNIO-1 task-6] r.c.m.z.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2023-11-11 11:42:53.631 DEBUG 1696 --- [XNIO-1 task-6] r.c.m.z.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2023-11-11 11:42:53.632 DEBUG 1696 --- [XNIO-1 task-6] r.c.m.z.repository.SubjectMapper.page    : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2023-11-11 11:42:53.633 DEBUG 1696 --- [XNIO-1 task-6] r.c.m.z.repository.SubjectMapper.page    : ==> Parameters: 10(Integer)
+2023-11-11 11:42:53.634 DEBUG 1696 --- [XNIO-1 task-6] r.c.m.z.repository.SubjectMapper.page    : <==      Total: 4
+2023-11-11 11:42:53.991 DEBUG 1696 --- [XNIO-1 task-7] r.c.m.z.r.TaskExamMapper.page_COUNT      : ==>  Preparing: SELECT count(0) FROM t_task_exam WHERE deleted = 0 
+2023-11-11 11:42:53.991 DEBUG 1696 --- [XNIO-1 task-7] r.c.m.z.r.TaskExamMapper.page_COUNT      : ==> Parameters: 
+2023-11-11 11:42:53.996 DEBUG 1696 --- [XNIO-1 task-7] r.c.m.z.r.TaskExamMapper.page_COUNT      : <==      Total: 1
+2023-11-11 11:42:53.997 DEBUG 1696 --- [XNIO-1 task-7] r.c.m.z.repository.TaskExamMapper.page   : ==>  Preparing: SELECT id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name FROM t_task_exam WHERE deleted = 0 order by id desc LIMIT ? 
+2023-11-11 11:42:53.997 DEBUG 1696 --- [XNIO-1 task-7] r.c.m.z.repository.TaskExamMapper.page   : ==> Parameters: 10(Integer)
+2023-11-11 11:42:53.998 DEBUG 1696 --- [XNIO-1 task-7] r.c.m.z.repository.TaskExamMapper.page   : <==      Total: 2
+2023-11-11 11:42:54.386 DEBUG 1696 --- [XNIO-1 task-8] r.c.m.z.r.SubjectMapper.allSubject       : ==>  Preparing: select id , name, level, level_name, item_order, deleted from t_subject 
+2023-11-11 11:42:54.386 DEBUG 1696 --- [XNIO-1 task-8] r.c.m.z.r.SubjectMapper.allSubject       : ==> Parameters: 
+2023-11-11 11:42:54.388 DEBUG 1696 --- [XNIO-1 task-8] r.c.m.z.r.SubjectMapper.allSubject       : <==      Total: 4
+2023-11-11 11:42:55.454 DEBUG 1696 --- [XNIO-1 task-9] r.c.m.z.r.UserEventLogMapper.page_COUNT  : ==>  Preparing: SELECT count(0) FROM t_user_event_log 
+2023-11-11 11:42:55.455 DEBUG 1696 --- [XNIO-1 task-9] r.c.m.z.r.UserEventLogMapper.page_COUNT  : ==> Parameters: 
+2023-11-11 11:42:55.458 DEBUG 1696 --- [XNIO-1 task-9] r.c.m.z.r.UserEventLogMapper.page_COUNT  : <==      Total: 1
+2023-11-11 11:42:55.458 DEBUG 1696 --- [XNIO-1 task-9] r.c.m.z.r.UserEventLogMapper.page        : ==>  Preparing: SELECT id, user_id, user_name, real_name, content, create_time FROM t_user_event_log order by id desc LIMIT ? 
+2023-11-11 11:42:55.459 DEBUG 1696 --- [XNIO-1 task-9] r.c.m.z.r.UserEventLogMapper.page        : ==> Parameters: 10(Integer)
+2023-11-11 11:42:55.462 DEBUG 1696 --- [XNIO-1 task-9] r.c.m.z.r.UserEventLogMapper.page        : <==      Total: 10
+2023-11-11 11:42:56.340 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted = 0 
+2023-11-11 11:42:56.341 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.E.selectAllCount               : ==> Parameters: 
+2023-11-11 11:42:56.341 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.E.selectAllCount               : <==      Total: 1
+2023-11-11 11:42:56.342 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted = 0 
+2023-11-11 11:42:56.342 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2023-11-11 11:42:56.342 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2023-11-11 11:42:56.344 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2023-11-11 11:42:56.344 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.E.selectAllCount               : ==> Parameters: 
+2023-11-11 11:42:56.345 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.E.selectAllCount               : <==      Total: 1
+2023-11-11 11:42:56.346 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2023-11-11 11:42:56.346 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.E.selectAllCount               : ==> Parameters: 
+2023-11-11 11:42:56.348 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.E.selectAllCount               : <==      Total: 1
+2023-11-11 11:42:56.349 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name, COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time, '%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2023-11-11 11:42:56.349 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.U.selectCountByDate            : ==> Parameters: 2023-11-01 00:00:00.0(Timestamp), 2023-11-30 23:59:59.0(Timestamp)
+2023-11-11 11:42:56.350 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.U.selectCountByDate            : <==      Total: 4
+2023-11-11 11:42:56.351 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.Q.selectCountByDate            : ==>  Preparing: SELECT create_time as name, COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time, '%Y-%m-%d') as create_time from t_question WHERE deleted=0 and create_time between ? and ? ) a GROUP BY create_time 
+2023-11-11 11:42:56.353 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.Q.selectCountByDate            : ==> Parameters: 2023-11-01 00:00:00.0(Timestamp), 2023-11-30 23:59:59.0(Timestamp)
+2023-11-11 11:42:56.353 DEBUG 1696 --- [XNIO-1 task-10] r.c.m.z.r.Q.selectCountByDate            : <==      Total: 2
+2023-11-11 11:42:56.679 DEBUG 1696 --- [XNIO-1 task-11] r.c.m.z.r.UserMapper.userPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2023-11-11 11:42:56.679 DEBUG 1696 --- [XNIO-1 task-11] r.c.m.z.r.UserMapper.userPage_COUNT      : ==> Parameters: 1(Integer)
+2023-11-11 11:42:56.681 DEBUG 1696 --- [XNIO-1 task-11] r.c.m.z.r.UserMapper.userPage_COUNT      : <==      Total: 1
+2023-11-11 11:42:56.684 DEBUG 1696 --- [XNIO-1 task-11] r.c.m.z.repository.UserMapper.userPage   : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2023-11-11 11:42:56.684 DEBUG 1696 --- [XNIO-1 task-11] r.c.m.z.repository.UserMapper.userPage   : ==> Parameters: 1(Integer), 10(Integer)
+2023-11-11 11:42:56.686 DEBUG 1696 --- [XNIO-1 task-11] r.c.m.z.repository.UserMapper.userPage   : <==      Total: 5
+2023-11-11 11:42:57.308 DEBUG 1696 --- [XNIO-1 task-12] r.c.m.z.r.UserMapper.userPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2023-11-11 11:42:57.309 DEBUG 1696 --- [XNIO-1 task-12] r.c.m.z.r.UserMapper.userPage_COUNT      : ==> Parameters: 3(Integer)
+2023-11-11 11:42:57.310 DEBUG 1696 --- [XNIO-1 task-12] r.c.m.z.r.UserMapper.userPage_COUNT      : <==      Total: 1
+2023-11-11 11:42:57.310 DEBUG 1696 --- [XNIO-1 task-12] r.c.m.z.repository.UserMapper.userPage   : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2023-11-11 11:42:57.312 DEBUG 1696 --- [XNIO-1 task-12] r.c.m.z.repository.UserMapper.userPage   : ==> Parameters: 3(Integer), 10(Integer)
+2023-11-11 11:42:57.313 DEBUG 1696 --- [XNIO-1 task-12] r.c.m.z.repository.UserMapper.userPage   : <==      Total: 2

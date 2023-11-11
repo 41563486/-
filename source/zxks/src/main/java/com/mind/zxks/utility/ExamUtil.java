@@ -83,6 +83,7 @@ public class ExamUtil {
      * @return the list
      */
     //内容转数组
+    //可以将一个变长参数或者数组转换成List
     public static List<String> contentToArray(String contentArray) {
         return Arrays.asList(contentArray.split(ANSWER_SPLIT));
     }
